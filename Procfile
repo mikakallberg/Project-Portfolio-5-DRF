@@ -1,2 +1,2 @@
 release: python manage.py makemigrations && python manage.py migrate
-web: gunicorn planner-drf-api.wsgi
+web: gunicorn p5_api.wsgi
