@@ -43,11 +43,15 @@
 ## Testing in development
 #
 - Testing done to ensure successful initial launch in preview and functionality of profiles app.
+- Test also successfull in Heroku.
 #
 Launch Successful in preview                         | Profiles succesfull
 :--------------------------------------------------: | :--------------------------------------------------:
  ![Launch](/assets/images_readme/launch_success.jpeg)| ![Profiles test](/assets/images_readme/first_profile_test.jpeg)
 #
+Successfull launch in Heroku                        |
+:--------------------------------------------------:|
+  ![Herokku launch](/assets/images_readme/heroku_success_test.jpeg)
 
 #
 ## Set up project in GitPod
