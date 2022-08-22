@@ -40,13 +40,14 @@
         - [Favicons](/credits.md#favicons)
         - [Creation Credits](/credits.md#creation-credits)
 #
-## Set up repository
+## Bugs in development
 #
-- For the startup of this project the Django REST framework walkthrough was followed.
-- Repository was set up in GitHub using the [Code Institute- gitpod-full-template](https://github.com/Code-Institute-Org/gitpod-full-template)
-- The chosen name for the drf-API was Project-Porfolio-5-DRF, to have a consistent naming of all projects.
-- When the repository was built, GitPod was chosen as the development platform.
-- GitPod was allowed to build as the primary window to minimize the risk of anyhting getting lost in the build.
+- At first the workspace couldn't create the profile app error-message "can't open file 'manage.py': [Errno 2] No such file or directory".
+   - File existed
+   - File was located inside a p5_api folder, when the project folder ws created it created double folders, put the manage.py-file inside the first folder next to
+     the second p5_api-folder that contained all the python files for the project.
+   - Solution: Move all files outside both folders, delete the inner p5_api-folder, move all python-files but the manage.py file inside the one remaining p5_api folder. Create app.
+   - App successfully created.
 #
 ## Set up project in GitPod
 #
