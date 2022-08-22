@@ -1,5 +1,3 @@
-from rest_framework.views import APIView
-from rest_framework.response import Response
-from .models import Profile
+from django.shortcuts import render
 
-class ProfileList
+# Create your views here.
