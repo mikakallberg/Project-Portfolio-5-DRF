@@ -69,6 +69,8 @@
    - pip3 freeze --local > requirements.txt (this command is also implemted every time a new dependency was installed)
 - Installed apps (plus the ones listed above):
    - pip3 install djangorestframework
+   - pip3 install dj-database-url
+   - pip3 install psycopg2
 
 #
 * [Back to top](#)
