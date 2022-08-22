@@ -25,18 +25,6 @@
     - [Mentoring](#mentoring)
     - [Content credits](#content-credits)
     - [Media](/credits.md)
-      -[Blog Content credits](/credits.md#blog-content-credits)
-        - [Why Soil Matters](/credits.md#why-soil-matters)
-        - [How to grow tomatoes](/credits.md#how-to-grow-tomatoes)
-        - [How to grow carrots](/credits.md#how-to-grow-carrots)
-        - [The humble potatoe](/credits.md#the-humble-potatoe)
-        - [The frail but worth it salad](/credits.md#the-frail-but-worth-it-salad)
-        - [The hearty onion](/credits.md#the-hearty-onion)
-        - [The plump Bell Pepper](/credits.md#the-plump-bell-pepper)
-     - [Image Credits](/credits.md#image-credits)
-        - [About us picture](/credits.md#about-us-picture)
-        - [Favicons](/credits.md#favicons)
-        - [Creation Credits](/credits.md#creation-credits)
 
 ## Project Purpose
 #
