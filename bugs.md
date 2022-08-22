@@ -49,19 +49,16 @@
    - Solution: Move all files outside both folders, delete the inner p5_api-folder, move all python-files but the manage.py file inside the one remaining p5_api folder. Create app.
    - App successfully created.
 #
-## Set up project in GitPod
+## Bugs left unsolved
 #
-- The following installments where made:
-    - Install django by command: pip3 install 'django<4'
-    - Install project by: django-admin startproject p5_api
-    - Install Cloudinary-storage by: pip3 install django-cloudinary-storage
-    - Install Pillow by: pip3 install Pillow
-- Then create env.py-file to hide any sensitive information like cloudinary key and secret key.
-- Set up settings.py exchanging the secret key for 'os.environ.get('SECRET_KEY')' and hiding the secret key in env.py,
-  same with cloudinary key only this key needed to be set between curlybraces 'CLOUDINARY_URL':  os.environ.get('CLOUDINARY_URL') in the settings-file.
-  Set up some os imports and host-settings.
-- Create first app by: python3 manage.py startapp profiles
-    - came across first bug.
+- In settings.py the following bugs is left unsolved:
+   - 're' imported but unused
+      - It is not being unused [Python doc on re](https://docs.python.org/3/library/re.html).
+   -'env' imported but unused
+      - The env is in an if statement and is therefore under conditional use. In localhost as in preview the env-file is implemented,
+        where as in Heroku cofig vars are used.
+   - 4 line to long on line 102, 105, 108 and 111. 
+      - These can't be modified, since doing so will create a more serious error that affects functionality.
 
 #
 * [Back to top](#)
