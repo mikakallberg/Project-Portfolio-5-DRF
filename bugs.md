@@ -59,6 +59,9 @@
         where as in Heroku cofig vars are used.
    - 4 line to long on line 102, 105, 108 and 111. 
       - These can't be modified, since doing so will create a more serious error that affects functionality.
+- In initial deployment to Heroku, app did not launch. 
+  - Looked through code to spot typos and typos in heroku settings. Found a couple, with the help of Gemma at tutor support, also hard set the allowed hosts to the heroku url.
+      - Bug fixed.
 
 #
 * [Back to top](#)
