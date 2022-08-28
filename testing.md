@@ -40,7 +40,7 @@
         - [Favicons](/credits.md#favicons)
         - [Creation Credits](/credits.md#creation-credits)
 #
-## Testing in development
+## First setup
 #
 - Testing done to ensure successful initial launch in preview and functionality of profiles app.
 - Test also successfull in Heroku.
@@ -54,8 +54,20 @@ Successfull launch in Heroku                        |
   ![Herokku launch](/assets/images_readme/heroku_success_test.jpeg)
 
 #
-## Set up project in GitPod
+## Testing in development
 #
+- After creation of a superuser.
+   -Test to see that /admin worked and that admin view is running correctly
+   - created 4 other profiles
+      - Test if default image works
+      - Test if password requirements work.
+#
+Admin view testing  
+   ![Password requirement](assets/images_readme/password_req.png)
+#
+Profiles created in admin view, has default image
+   ![Profiles](assets/images_readme/profiles_created_in_admin.png)
+
 
 
 #
