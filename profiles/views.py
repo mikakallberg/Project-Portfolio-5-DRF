@@ -18,6 +18,7 @@ class ProfileList(APIView):
 
 
 class ProfileDetail(APIView):
+    """ Should change to IsAuthenticated?"""
     permission_classes = [IsOwnerOrReadOnly]
     serializer_class = ProfileSerializer
 
