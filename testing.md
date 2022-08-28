@@ -67,7 +67,10 @@ Admin view testing
 #
 Profiles created in admin view, has default image
    ![Profiles](assets/images_readme/profiles_created_in_admin.png)
-
+#
+- Testing done on profile list view in backend UI.
+   - Possible for superuser to edit user profiles in UI.
+      - Future testing to see if another regular user can change info on other users.
 
 
 #
