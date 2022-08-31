@@ -1,3 +1,5 @@
+"""
+"""
 from p5_api.permissions import IsOwnerOrReadOnly
 from django.http import Http404
 from rest_framework import status
@@ -8,6 +10,8 @@ from .serializers import ProfileSerializer
 
 
 class ProfileList(APIView):
+    """
+    """
     def get(self, request):
         profiles = Profile.objects.all()
         serializer = ProfileSerializer(
@@ -18,7 +22,8 @@ class ProfileList(APIView):
 
 
 class ProfileDetail(APIView):
-    """ Should change to IsAuthenticated?"""
+    """
+    """
     permission_classes = [IsOwnerOrReadOnly]
     serializer_class = ProfileSerializer
 
