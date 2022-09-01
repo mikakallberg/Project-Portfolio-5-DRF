@@ -61,6 +61,7 @@
   Set up some os imports and host-settings.
 - Create first app by: python3 manage.py startapp profiles
     - came across first bug.
+    -subseqent apps created by command python3 manage.py startapp "app name"
 - After model update the following commands where implemented in terminal:
    - python3 manage.py makemigrations --dry-run
    - python3 manage.py makemigrations
