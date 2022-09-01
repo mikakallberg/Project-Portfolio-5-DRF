@@ -76,6 +76,11 @@ Profiles created in admin view, has default image
    - Unathorized user creating posts
    - uploading files that are to big.
    - Not filling out title-field.
+   - View for other authorized users, no edit functionality on posts.
+- Testing done on comments:
+   - Creating, editing and deleting post as authorized user.
+   -Accessing comment as other authenticated user. Read only.
+   - Accessing comment as unathenticated user. Read only.
 
 #
 * [Back to top](#)
