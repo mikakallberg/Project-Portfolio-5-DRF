@@ -81,6 +81,11 @@ Profiles created in admin view, has default image
    - Creating, editing and deleting post as authorized user.
    -Accessing comment as other authenticated user. Read only.
    - Accessing comment as unathenticated user. Read only.
+- Testing done on like:
+   - Unauthenticated users, no access to liking posts
+   - Authenticated users can like posts.
+   -If tried twice error-page.
+   - Authenticated and authorized user can delete like.
 
 #
 * [Back to top](#)
