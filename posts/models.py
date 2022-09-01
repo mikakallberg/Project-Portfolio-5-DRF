@@ -14,6 +14,9 @@ class Post(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     title = models.CharField(max_length=255)
     content = models.TextField(blank=True)
+    image = models.ImageField(
+        upload_to='images/', default='../default_post_gbfrps', blank=True
+    )
     image_filter_choices = [
         ('_1977', '1977'),
         ('brannan', 'Brannan'),
@@ -30,9 +33,6 @@ class Post(models.Model):
         ('walden', 'Walden'),
         ('xpro2', 'X-pro II')
     ]
-    image = models.ImageField(
-        upload_to='images/', default='../default_post_gbfrps', blank=True
-    )
     image_filter = models.CharField(
         max_length=32, choices=image_filter_choices, default='normal'
     )

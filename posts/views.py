@@ -1,13 +1,23 @@
 """
+Dictate the view instructions for UI
 """
-from django.db.models import Count
-from rest_framework import generics, permissions, filters
-from django_filters.rest_framework import DjangoFilterBackend
-from drf_api.permissions import IsOwnerOrReadOnly
+from rest_framework import status
+from rest_framework.response import Response
+from rest_framework.views import APIView
 from .models import Post
 from .serializers import PostSerializer
 
 
-class PostList(generics.ListCreateAPIView):
+class PostList(APIView):
     """
+    List all profiles
+    No Create view (post method), as profile creation 
+    handled by django signals
     """
+    def get(self, request):
+        posts = Post.objects.all()
+        serializer = PostSerializer(
+            posts,
+            many=True,
+            context={'request': request})
+        return Response(serializer.data)

@@ -1,4 +1,5 @@
 """
+Serialize Post-model into JSON-data
 """
 from rest_framework import serializers
 from posts.models import Post
@@ -6,6 +7,8 @@ from posts.models import Post
 
 class PostSerializer(serializers.ModelSerializer):
     """
+    Structures serilialized to JSON-data
+    Id is found within owner for React.
     """
     owner = serializers.ReadOnlyField(source='owner.username')
     is_owner = serializers.SerializerMethodField()
@@ -13,6 +16,9 @@ class PostSerializer(serializers.ModelSerializer):
     profile_image = serializers.ReadOnlyField(source='owner.profile.image.url')
 
     def validate_image(self, value):
+        """
+        Acceptable image size by px and byte.
+        """
         if value.size > 2 * 1024 * 1024:
             raise serializers.ValidationError('Image size larger than 2MB!')
         if value.image.width > 4096:
@@ -26,11 +32,15 @@ class PostSerializer(serializers.ModelSerializer):
         return value
 
     def get_is_owner(self, obj):
+        """
+        Acceptable acces to object.
+        """
         request = self.context['request']
         return request.user == obj.owner
 
     class Meta:
         """
+        Visible model structures in UI-view
         """
         model = Post
         fields = [
