@@ -72,7 +72,10 @@ Profiles created in admin view, has default image
    - Possible for superuser to edit user profiles in UI.
       - Future testing to see if another regular user can change info on other users.
 - Testing done on profile 1, 3 and 5 after adding authentication. Testing also in logged out state. Only owner can access edit tool for profile.
-
+- Testing done on post:
+   - Unathorized user creating posts
+   - uploading files that are to big.
+   - Not filling out title-field.
 
 #
 * [Back to top](#)

@@ -1,4 +1,5 @@
 """
+Profile view instructions
 """
 from p5_api.permissions import IsOwnerOrReadOnly
 from django.http import Http404
@@ -11,6 +12,7 @@ from .serializers import ProfileSerializer
 
 class ProfileList(APIView):
     """
+    Listing all user profiles
     """
     def get(self, request):
         profiles = Profile.objects.all()
@@ -23,6 +25,7 @@ class ProfileList(APIView):
 
 class ProfileDetail(APIView):
     """
+    View of individual user profile
     """
     permission_classes = [IsOwnerOrReadOnly]
     serializer_class = ProfileSerializer
