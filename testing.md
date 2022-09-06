@@ -79,7 +79,6 @@ Profiles created in admin view, has default image
        - after which profile is following who and order in descending and ascending order for follow count, post count, owner following created at. 
        - profiles following other profiles or not and then ordering then differently ascending and descending order.
 
-
 - Testing done on post:
    - Unathorized user creating posts
    - uploading files that are to big.
@@ -91,10 +90,12 @@ Profiles created in admin view, has default image
    -test filtering functions.
        - Order posts on number of likes, number of comments and when posts where liked. 
        - filtering on profiles a user is following, likes and posts.
+
 - Testing done on comments:
    - Creating, editing and deleting post as authorized user.
    -Accessing comment as other authenticated user. Read only.
    - Accessing comment as unathenticated user. Read only.
+   - Test filtering comments of different user's posts.
 - Testing done on like:
    - Unauthenticated users, no access to liking posts
    - Authenticated users can like posts.
