@@ -83,6 +83,7 @@ Profiles created in admin view, has default image
    - View for other authorized users, no edit functionality on posts.
    - After refactoring:
       - test entire crud functionality and view from nonowner view.
+   - After adding like_id to posts, testing to see if create and delete like functions successfully.
 - Testing done on comments:
    - Creating, editing and deleting post as authorized user.
    -Accessing comment as other authenticated user. Read only.

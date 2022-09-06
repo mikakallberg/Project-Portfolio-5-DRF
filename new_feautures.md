@@ -42,7 +42,7 @@
 #
 ## Agile development
 #
-- Give User control of thier followers list, by adding delete and/or block function.
+- Give User control of their followers list, by adding delete and/or block function.
 - Give User the possibility to delete their whole profile.
     - implemented.
         - cascade function needed.
