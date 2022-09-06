@@ -86,6 +86,11 @@ Profiles created in admin view, has default image
    - Authenticated users can like posts.
    -If tried twice error-page.
    - Authenticated and authorized user can delete like.
+- Testing done on followers:
+   - test following authenticated users as a authenticated user.
+   - No access to follow authenticated user while not logged in.
+   - Successful unfollowing a authentictated user as a logged in user.
+   - A user can't make an authenticated follower unfollow them.
 
 #
 * [Back to top](#)
