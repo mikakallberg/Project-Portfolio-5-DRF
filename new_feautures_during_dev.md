@@ -43,6 +43,7 @@
 ## Agile development
 #
 - Give User control of thier followers list, by adding delete and/or block function.
+- Give User the possibility to delete their whole profile.
 
 #
 * [Back to top](#)
