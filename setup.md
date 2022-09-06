@@ -51,10 +51,10 @@
 ## Set up project in GitPod
 #
 - The following installments where made:
-    - Install django by command: pip3 install 'django<4'
+    - Install django by command: [pip3 install 'django<4'](https://www.djangoproject.com/)
     - Install project by: django-admin startproject p5_api
-    - Install Cloudinary-storage by: pip3 install django-cloudinary-storage
-    - Install Pillow by: pip3 install Pillow
+    - Install Cloudinary-storage by: [pip3 install django-cloudinary-storage](https://cloudinary.com/documentation/django_integration)
+    - Install Pillow by: [pip3 install Pillow](https://pillow.readthedocs.io/en/stable/)
 - Then create env.py-file to hide any sensitive information like cloudinary key and secret key.
 - Set up settings.py exchanging the secret key for 'os.environ.get('SECRET_KEY')' and hiding the secret key in env.py,
   same with cloudinary key only this key needed to be set between curlybraces 'CLOUDINARY_URL':  os.environ.get('CLOUDINARY_URL') in the settings-file.
@@ -69,9 +69,10 @@
    - python3 manage.py migrate
    - pip3 freeze --local > requirements.txt (this command is also implemted every time a new dependency was installed)
 - Installed apps (plus the ones listed above):
-   - pip3 install djangorestframework
-   - pip3 install dj-database-url (https://pypi.org/project/dj-database-url/)
-   - pip3 install psycopg2 (https://pypi.org/project/psycopg2/)
+   - [pip3 install djangorestframework](https://www.django-rest-framework.org/)
+   - [pip3 install dj-database-url](https://pypi.org/project/dj-database-url/)
+   - [pip3 install psycopg2](https://pypi.org/project/psycopg2/)
+   - [pip3 install django-filter](https://django-filter.readthedocs.io/en/stable/)
 
 #
 * [Back to top](#)
