@@ -5,6 +5,7 @@ from django.db.models import Count
 from rest_framework import generics, permissions, filters
 from .models import Post
 from .serializers import PostSerializer
+from django_filters.rest_framework import DjangoFilterBackend
 from p5_api.permissions import IsOwnerOrReadOnly
 
 
@@ -21,6 +22,7 @@ class PostList(generics.ListCreateAPIView):
     filter_backends = [
         filters.OrderingFilter,
         filters.SearchFilter,
+        DjangoFilterBackend,
     ]
     filterset_fields = [
         'owner__followed__owner__profile',
