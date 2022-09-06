@@ -20,9 +20,6 @@ class ProfileDetail(generics.RetrieveUpdateDestroyAPIView):
     View of individual user profile
     """
     permission_classes = [IsOwnerOrReadOnly]
-    serializer_class = ProfileSerializer
-
-    permission_classes = [IsOwnerOrReadOnly]
     queryset = Profile.objects.all()
     serializer_class = ProfileSerializer
 
