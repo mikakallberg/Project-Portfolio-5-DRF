@@ -75,6 +75,10 @@ Profiles created in admin view, has default image
    -After refactoring:
       - test delete profile, successfull
       - No access to delete other users profiles
+   - Test filtering profiles:
+       - after which profile is following who and order in descending and ascending order for follow count, post count, owner following created at. 
+       - profiles following other profiles or not and then ordering then differently ascending and descending order.
+
 
 - Testing done on post:
    - Unathorized user creating posts
