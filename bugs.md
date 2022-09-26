@@ -48,6 +48,8 @@
      the second p5_api-folder that contained all the python files for the project.
    - Solution: Move all files outside both folders, delete the inner p5_api-folder, move all python-files but the manage.py file inside the one remaining p5_api folder. Create app.
    - App successfully created.
+- After the workspace timed out and was deleted, couldn't get the preview to run, after creating a new env-file from Heroku Config Vars.
+   - solution reinstall dependencies with 'pip3 install -r requirements.txt'.
 #
 ## Bugs left unsolved
 #
