@@ -73,6 +73,8 @@
    - [pip3 install dj-database-url](https://pypi.org/project/dj-database-url/)
    - [pip3 install psycopg2](https://pypi.org/project/psycopg2/)
    - [pip3 install django-filter](https://django-filter.readthedocs.io/en/stable/)
+   - [pip3 install dj-rest-auth](https://dj-rest-auth.readthedocs.io/en/latest/installation.html)
+   - [pip3 install 'dj-rest-auth[with_social]'](https://dj-rest-auth.readthedocs.io/en/latest/installation.html#registration-optional)
 
 #
 * [Back to top](#)
