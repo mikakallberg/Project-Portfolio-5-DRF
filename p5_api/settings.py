@@ -65,7 +65,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEV' in os.environ
 
-ALLOWED_HOSTS = ['planner-drf-api.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['portfolio-project-5-drf-api.herokuapp.com', 'localhost']
 
 # Enable allowed crossorigin communication for production and dev.
 if 'CLIENT_ORIGIN' in os.environ:
