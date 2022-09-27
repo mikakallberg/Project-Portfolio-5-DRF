@@ -44,7 +44,7 @@
 #
 - For the startup of this project the Django REST framework walkthrough was followed.
 - Repository was set up in GitHub using the [Code Institute- gitpod-full-template](https://github.com/Code-Institute-Org/gitpod-full-template)
-- The chosen name for the drf-API was Project-Porfolio-5-DRF, to have a consistent naming of all projects.
+- The chosen name for the project was Project-Porfolio-5-DRF, to have a consistent naming of all projects.
 - When the repository was built, GitPod was chosen as the development platform.
 - GitPod was allowed to build as the primary window to minimize the risk of anyhting getting lost in the build.
 #
