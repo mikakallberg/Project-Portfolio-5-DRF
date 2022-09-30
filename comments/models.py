@@ -15,7 +15,9 @@ class Comment(models.Model):
     content = models.TextField()
 
     class Meta:
+        """ The order comment are shown """
         ordering = ['-created_at']
 
     def __str__(self):
+        """ Returning content """
         return self.content

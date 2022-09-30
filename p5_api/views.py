@@ -1,3 +1,4 @@
+""" Root_route message and logout fix """
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from .settings import (
@@ -8,6 +9,7 @@ from .settings import (
 
 @api_view()
 def root_route(request):
+    """ Message returned to screen """
     return Response({
         "message": "Welcome to my Project 5 API!"
     })
@@ -16,6 +18,7 @@ def root_route(request):
 # dj-rest-auth logout fix
 @api_view(['POST'])
 def logout_route(request):
+    """ Gives User the possibility to logout before timeout """
     response = Response()
     response.set_cookie(
         key=JWT_AUTH_COOKIE,
