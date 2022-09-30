@@ -91,8 +91,9 @@ Successfull launch in Heroku                        |
        - A serializer-file was created in project app to serialize the cookie information.
     -Debug is to a os.environ variable, so that when in production debug will be true, but not in production.
     - Allowed hosts are set to a os-environ variable to allow multiple outside projects to use this API.
+    - Change Allowed hosts in Heroku config vars to match the name string used in settings.py.
     - A root_route page is created in the project app also a logout route, to enable users to logout properly.
-    -
+    - Deploy page in Heroku successful.
 
 #
 * [Back to top](#)
