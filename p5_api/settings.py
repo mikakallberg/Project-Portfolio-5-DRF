@@ -114,6 +114,7 @@ INSTALLED_APPS = [
     'likes',
     'followers',
     'instantmsg',
+    'contacts',
     'channels',
 ]
 
@@ -149,6 +150,16 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'p5_api.wsgi.application'
+ASGI_APPLICATION = 'p5_api.asgi.application'
+
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels_redis.core.RedisChannelLayer",
+        "CONFIG": {
+            "hosts": [("127.0.0.1", 6379)],
+        },
+    },
+}
 
 
 # Database

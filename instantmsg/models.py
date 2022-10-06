@@ -6,8 +6,8 @@ from profiles.models import profile
 
 class InstantMessage(models.Model):
     """ Models for Instant Messaging"""
-    owner = models.ForeignKey(User, on_delete=modesl.CASCADE)
-    message = models.ForeignKey(to?, on_delete=models.CASCADE)
+    owner = models.ForeignKey(User, on_delete=models.CASCADE)
+    message = models.ForeignKey(User, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     textmsg = models.TextField(blank=True)
