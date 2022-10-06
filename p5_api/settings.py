@@ -114,6 +114,7 @@ INSTALLED_APPS = [
     'likes',
     'followers',
     'instantmsg',
+    'channels',
 ]
 
 SITE_ID = 1
