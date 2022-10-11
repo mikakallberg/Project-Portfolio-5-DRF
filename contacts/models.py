@@ -13,7 +13,6 @@ class Contacts(models.Model):
         User,
         related_name='contact2',
         on_delete=models.CASCADE)
-    slug = models.SlugField(unique=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
