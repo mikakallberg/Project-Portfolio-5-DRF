@@ -77,15 +77,15 @@ if 'CLIENT_ORIGIN' in os.environ:
     ]
 
 if 'CLIENT_ORIGIN_DEV' in os.environ:
-    extracted_url = re.match(r'^.+-', os.environ.get('CLIENT_ORIGIN_DEV', ''), re.IGNORECASE).group(0)
+    extracted_url = re.match(
+        r'^.+-', os.environ.get('CLIENT_ORIGIN_DEV', ''),
+        re.IGNORECASE).group(0)
     CORS_ALLOWED_ORIGIN_REGEXES = [
         rf"{extracted_url}(eu|us)\d+\w\.gitpod\.io$",
     ]
 
 # crossorigin cookie, enable authenication
 CORS_ALLOW_CREDENTIALS = True
-
-
 
 # Application definition
 
@@ -113,7 +113,6 @@ INSTALLED_APPS = [
     'comments',
     'likes',
     'followers',
-    'instantmsg',
     'contacts',
     'channels',
 ]
@@ -149,9 +148,11 @@ TEMPLATES = [
     },
 ]
 
+# Gateway interfaces
 WSGI_APPLICATION = 'p5_api.wsgi.application'
 ASGI_APPLICATION = 'p5_api.asgi.application'
 
+# Redis channel layer, chat communication is saved
 CHANNEL_LAYERS = {
     "default": {
         "BACKEND": "channels_redis.core.RedisChannelLayer",
