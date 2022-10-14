@@ -4,7 +4,7 @@ from django.utils.decorators import method_decorator
 from rest_framework import generics, permissions
 from p5_api.permissions import IsOwnerOrReadOnly
 from .models import Contacts, Message
-from .serializers import ContactsSerializer
+from .serializers import ContactsSerializer, MessageSerializers
 
 
 @method_decorator(login_required, name='dispatch')
@@ -22,12 +22,14 @@ class ContactList(generics.ListCreateAPIView):
 
 
 @method_decorator(login_required, name='dispatch')
-class ContactDetail(generics.RetrieveUpdateDestroyAPIView):
+class ChatDetail(generics.RetrieveUpdateDestroyAPIView):
     """
     The detail view of a authenticated user that
     is following another user
     """
     permission_classes = [IsOwnerOrReadOnly]
-    queryset = Contacts.objects.all()
-    messages = Message.objects.all()
-    serializer_class = ContactsSerializer
+    queryset = Message.objects.all()
+    serializer_class = MessageSerializers
+
+    def perform_create(self, serializer):
+        serializer.save(chat_owner=self.request.user)

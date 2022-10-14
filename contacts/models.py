@@ -7,11 +7,11 @@ class Contacts(models.Model):
     """ Model for list of active chats """
     owner = models.ForeignKey(
         User,
-        related_name='contact1',
+        related_name='owner',
         on_delete=models.CASCADE)
     contact = models.ForeignKey(
         User,
-        related_name='contact2',
+        related_name='contact',
         on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -29,10 +29,17 @@ class Contacts(models.Model):
 
 class Message(models.Model):
     """ Model for chat messages """
-    contact = models.ForeignKey(Contacts, on_delete=models.CASCADE)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(
+        Contacts,
+        related_name='chat_owner',
+        on_delete=models.CASCADE)
+    contact = models.ForeignKey(
+        User,
+        related_name='chat_contact',
+        on_delete=models.CASCADE)
     content = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
         """ Ordering messages """

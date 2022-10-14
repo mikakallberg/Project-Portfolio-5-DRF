@@ -31,7 +31,7 @@ class ChatConsumer(AsyncWebsocketConsumer):
         username = data['username']
         contact = data['contact']
 
-        await self.save(username, contact, message)
+        await self.save_message(username, contact, message)
 
         await self.channel_layer.group_send(
             self.contact_group_name,
