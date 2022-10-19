@@ -7,11 +7,11 @@ class Contacts(models.Model):
     """ Model for list of active chats """
     owner = models.ForeignKey(
         User,
-        related_name='owner',
+        related_name='contacts_owner',
         on_delete=models.CASCADE)
     contact = models.ForeignKey(
         User,
-        related_name='contact',
+        related_name='contacts_contact',
         on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

@@ -115,7 +115,7 @@ INSTALLED_APPS = [
     'likes',
     'followers',
     'contacts',
-    'messages',
+    'imessages',
     'channels',
 ]
 

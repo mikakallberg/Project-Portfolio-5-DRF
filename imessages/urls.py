@@ -1,6 +1,6 @@
 """ Url path for active chats """
 from django.urls import path
-from message import views
+from imessages import views
 
 
 urlpatterns = [

@@ -13,7 +13,7 @@ from django.core.asgi import get_asgi_application
 from channels.auth import AuthMiddlewareStack
 from channels.routing import ProtocolTypeRouter, URLRouter
 from channels.security.websocket import AllowedHostsOriginValidator
-import contacts.routing
+import imessages.routing
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'p5_api.settings')
 p5_api = get_asgi_application()
@@ -26,7 +26,7 @@ application = ProtocolTypeRouter({
     'websocket': AllowedHostsOriginValidator(
         AuthMiddlewareStack(
             URLRouter(
-                contacts.routing.websocket_urlpatterns
+                imessages.routing.websocket_urlpatterns
             )
         ),
     )

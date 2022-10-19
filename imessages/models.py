@@ -7,12 +7,12 @@ from contacts.models import Contacts
 class Message(models.Model):
     """ Model for chat messages """
     owner = models.ForeignKey(
-        Contacts,
-        related_name='chat_owner',
+        User,
+        related_name='message_owner',
         on_delete=models.CASCADE)
     contact = models.ForeignKey(
         Contacts,
-        related_name='chat_contact',
+        related_name='contacts_contact',
         on_delete=models.CASCADE)
     content = models.TextField()
     image = models.ImageField(
@@ -46,4 +46,4 @@ class Message(models.Model):
 
     def __str__(self):
         """ Returning content """
-        return self.content
+        return f'{self.owner} {self.content}'

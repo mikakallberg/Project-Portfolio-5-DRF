@@ -1,17 +1,19 @@
 """Serialize Messages model into JSON-data"""
 from django.contrib.humanize.templatetags.humanize import naturaltime
 from rest_framework import serializers
-from messages.models import Message
+from imessages.models import Message
 
 
-class MessageSerializers(serializers.ModelSerializer):
+class MessageSerializer(serializers.ModelSerializer):
     """ Serializing Message model into JSON-data """
-    chat_owner = serializers.ReadOnlyField(source='chat_owner.username')
-    chat_contact = serializers.ReadOnlyField(source='chat_contact.username')
+    owner = serializers.ReadOnlyField(source='message_owner.username')
+    contact_name = serializers.ReadOnlyField(source='contacts_contact.username')
     is_owner = serializers.SerializerMethodField()
-    profile_id = serializers.ReadOnlyField(source='chat_owner.profile.id')
+    profile_id = serializers.ReadOnlyField(source='owner.profile.id')
     profile_image = serializers.ReadOnlyField(
-        source='chat_owner.profile.image.url')
+        source='owner.profile.image.url')
+    message_list = serializers.ReadOnlyField(
+        source='owner.username.content.contact.username')
     created_at = serializers.SerializerMethodField()
     updated_at = serializers.SerializerMethodField()
 
@@ -49,12 +51,41 @@ class MessageSerializers(serializers.ModelSerializer):
         model = Message
         fields = [
             'id',
-            'chat_contact',
-            'chat_owner',
+            'contact',
+            'contact_name',
+            'owner',
             'is_owner',
             'profile_id',
             'profile_image',
             'created_at',
             'updated_at',
-            'content'
+            'content',
+            'message_list',
+            'image',
+            'image_filter',
+        ]
+
+
+class MessageDetailSerializer(MessageSerializer):
+    """ Serialize message details """
+    message = serializers.ReadOnlyField(source='content.id')
+
+    class Meta:
+        """ Which assets are shown with message """
+        model = Message
+        fields = [
+            'id',
+            'contact',
+            'contact_name',
+            'owner',
+            'is_owner',
+            'profile_id',
+            'profile_image',
+            'created_at',
+            'updated_at',
+            'content',
+            'message_list',
+            'message',
+            'image',
+            'image_filter',
         ]

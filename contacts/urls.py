@@ -5,5 +5,5 @@ from contacts import views
 
 urlpatterns = [
     path('contacts/', views.ContactList.as_view()),
-    path('contacts/<int:pk>/', views.ChatDetail.as_view()),
+    path('contacts/<int:pk>/', views.ContactDetailList.as_view()),
 ]

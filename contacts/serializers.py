@@ -1,6 +1,7 @@
 """Serialize Contacts model into JSON-data"""
 from rest_framework import serializers
 from .models import Contacts
+from django.contrib.humanize.templatetags.humanize import naturaltime
 
 
 class ContactsSerializer(serializers.ModelSerializer):
@@ -16,6 +17,19 @@ class ContactsSerializer(serializers.ModelSerializer):
     created_at = serializers.SerializerMethodField()
     updated_at = serializers.SerializerMethodField()
 
+    def get_is_owner(self, obj):
+        """ Get owner for message """
+        request = self.context['request']
+        return request.user == obj.owner
+
+    def get_created_at(self, obj):
+        """ Time of message creation """
+        return naturaltime(obj.created_at)
+
+    def get_updated_at(self, obj):
+        """ Time of message update """
+        return naturaltime(obj.created_at)
+
     class Meta:
         """Specifies which fields to serialize to JSON-data"""
         model = Contacts
@@ -30,3 +44,8 @@ class ContactsSerializer(serializers.ModelSerializer):
             'contact_name',
             'is_owner',
         ]
+
+
+class ContactsDetailSerializer(ContactsSerializer):
+    """ Serilaize message details """
+    contact = serializers.ReadOnlyField(source='contact.id')
