@@ -4,6 +4,7 @@ from channels.generic.websocket import AsyncWebsocketConsumer
 from asgiref.sync import sync_to_async
 from django.contrib.auth.models import User
 from contacts.models import Contacts
+from messages.models import Message
 
 
 class ChatConsumer(AsyncWebsocketConsumer):
@@ -60,4 +61,4 @@ class ChatConsumer(AsyncWebsocketConsumer):
         user = User.objects.get(username=username)
         contact = Contacts.objects.get(slug=contact)
 
-        Contacts().objects.create(user=user, contact=contact, content=message)
+        Message.objects.create(user=user, contact=contact, content=message)

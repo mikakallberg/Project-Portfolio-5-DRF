@@ -53,6 +53,17 @@
     - Solution: With the help of Tutor support we found spelling errors in multiple places of allowed hosts. When these where solved deployment was successfull. 
 - After the workspace timed out and was deleted, couldn't get the preview to run, after creating a new env-file from Heroku Config Vars.
    - solution reinstall dependencies with 'pip3 install -r requirements.txt'.
+- In production of chat application, several error messages occured. Most had to do with naming and missing routes between files, but one was a OperationalError, tht did not want to resolve itself with convential methods.
+   - Solved using a database reset script given by Tutor support.
+   The script:
+      - Renamed the old sql-database to sqlite3.old.
+      - Remove all migration files
+      - Make new migrations
+- No connection between connection in model Contacts and model Messages.
+   - Solved by moving up all model settings to Contacts to ensure fluidity between the two sections. Security and privacy for Chat-User will be ensured using authentication methods in React.
+      - Possible imrpovement might be using permission_required and/or a PermissionRequiredMixin from [Django authentication decorators](https://docs.djangoproject.com/en/4.1/topics/auth/default/#the-permission-required-decorator).
+- While testing messages no unique id created for each message, since Chatdetail with Contactlist works the same as Commentdetail with Commentlist. User only able to edit first message.
+   - 
 #
 ## Bugs left unsolved
 #

@@ -69,7 +69,7 @@ Profiles created in admin view, has default image
    ![Profiles](assets/images_readme/profiles_created_in_admin.png)
 #
 - Testing done on profile:
-   - Possible for superuser to edit user profiles in UI.
+   - Possible for superuser to edit user profile in UI.
       - Future testing to see if another regular user can change info on other users.
    - Testing done on profile 1, 3 and 5 after adding authentication. Testing also in logged out state. Only owner can access edit tool for profile.
    -After refactoring:
@@ -78,7 +78,9 @@ Profiles created in admin view, has default image
    - Test filtering profiles:
        - after which profile is following who and order in descending and ascending order for follow count, post count, owner following created at. 
        - profiles following other profiles or not and then ordering then differently ascending and descending order.
-
+#
+- Images
+#
 - Testing done on post:
    - Unathorized user creating posts
    - uploading files that are to big.
@@ -90,7 +92,9 @@ Profiles created in admin view, has default image
    -test filtering functions.
        - Order posts on number of likes, number of comments and when posts where liked. 
        - filtering on profiles a user is following, likes and posts.
-
+#
+- Images
+#
 - Testing done on comments:
    - Creating, editing and deleting post as authorized user.
    -Accessing comment as other authenticated user. Read only.
@@ -106,7 +110,21 @@ Profiles created in admin view, has default image
    - No access to follow authenticated user while not logged in.
    - Successful unfollowing a authentictated user as a logged in user.
    - A user can't remove an authenticated User from their followers list.
-
+#
+- Images
+#
+- Testing done on likes
+#
+- Images
+#
+- Testing done on followers
+#
+- Images
+#
+- Testing done on chat
+#
+- Images
+#
 #
 * [Back to top](#)
 #
