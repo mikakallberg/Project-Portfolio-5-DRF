@@ -100,11 +100,17 @@ Profiles created in admin view, has default image
    -Accessing comment as other authenticated user. Read only.
    - Accessing comment as unathenticated user. Read only.
    - Test filtering comments of different user's posts.
+#
+- Images
+#
 - Testing done on like:
    - Unauthenticated users, no access to liking posts
    - Authenticated users can like posts.
    -If tried twice error-page.
    - Authenticated and authorized user can delete like.
+#
+- Images
+#
 - Testing done on followers:
    - test following authenticated users as a authenticated user.
    - No access to follow authenticated user while not logged in.
@@ -113,15 +119,12 @@ Profiles created in admin view, has default image
 #
 - Images
 #
-- Testing done on likes
-#
-- Images
-#
-- Testing done on followers
-#
-- Images
-#
-- Testing done on chat
+- Testing done on chat:
+- User can initiate contact with another User.
+- That contact can then be transfered to imessages and connect creating a message to the User(owner) and User(contact), with unique Ids on owner, contact and message.
+- User that is owner can access message and has the opurtunity to edit or delete message. 
+- User that is not owner cannot access edit or delete function.
+
 #
 - Images
 #

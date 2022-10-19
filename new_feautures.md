@@ -46,6 +46,7 @@
 - Give User the possibility to delete their whole profile.
     - implemented.
         - cascade function needed.
+- In the chat feature (apps contacts and imessage) use permission_required and/or a PermissionRequiredMixin from [Django authentication decorators](https://docs.djangoproject.com/en/4.1/topics/auth/default/#the-permission-required-decorator). To increase User control over who they connect with.
 
 #
 * [Back to top](#)

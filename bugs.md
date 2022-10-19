@@ -61,9 +61,13 @@
       - Make new migrations
 - No connection between connection in model Contacts and model Messages.
    - Solved by moving up all model settings to Contacts to ensure fluidity between the two sections. Security and privacy for Chat-User will be ensured using authentication methods in React.
-      - Possible imrpovement might be using permission_required and/or a PermissionRequiredMixin from [Django authentication decorators](https://docs.djangoproject.com/en/4.1/topics/auth/default/#the-permission-required-decorator).
+      - Possible improvement might be using permission_required and/or a PermissionRequiredMixin from [Django authentication decorators](https://docs.djangoproject.com/en/4.1/topics/auth/default/#the-permission-required-decorator).
 - While testing messages no unique id created for each message, since Chatdetail with Contactlist works the same as Commentdetail with Commentlist. User only able to edit first message.
-   - 
+   - Solution: split the contacts and messages into two seperate apps.
+- In the new app, first named messages, it clashed with a django code named messages, creating duplicates in when running server.
+   - Solution: change name to imessage, plus related fields.
+- When creating path between contacts/models.py and imessages/models.py, several bugs in connecting the two.
+   - Solution: with owner let that be a User from the Django library, with contact let that be imported from contacts/models.py, also save the new messages in imessages/views.py function def perform_create.
 #
 ## Bugs left unsolved
 #
