@@ -69,61 +69,72 @@ Profiles created in admin view, has default image
    ![Profiles](assets/images_readme/profiles_created_in_admin.png)
 #
 - Testing done on profile:
-   - Possible for superuser to edit user profile in UI.
+   - Possible for superuser to edit user profile in UI
       - Future testing to see if another regular user can change info on other users.
-   - Testing done on profile 1, 3 and 5 after adding authentication. Testing also in logged out state. Only owner can access edit tool for profile.
+   - Testing done on profile 1, 3 and 5 after adding authentication. Testing also in logged out state. Only owner can access edit tool for profile
    -After refactoring:
       - test delete profile, successfull
       - No access to delete other users profiles
    - Test filtering profiles:
-       - after which profile is following who and order in descending and ascending order for follow count, post count, owner following created at. 
+       - after which profile is following who and order in descending and ascending order for follow count, post count, owner following created at
        - profiles following other profiles or not and then ordering then differently ascending and descending order.
 #
 - Images
 #
 - Testing done on post:
    - Unathorized user creating posts
-   - uploading files that are to big.
-   - Not filling out title-field.
-   - View for other authorized users, no edit functionality on posts.
+      - No access to tools
+   - Uploading files that are to big
+      - Error message
+   - Not filling out title-field
+      -Error message
+   - View for other authorized users, no edit functionality on posts
+      - No access to tools
    - After refactoring:
-      - test entire crud functionality and view from nonowner view.
+      - test entire crud functionality and view from non-owner view
    - After adding like_id to posts, testing to see if create and delete like functions successfully.
-   -test filtering functions.
+   - Test filtering functions.
        - Order posts on number of likes, number of comments and when posts where liked. 
-       - filtering on profiles a user is following, likes and posts.
+       - Filtering on profiles a user is following, likes and posts
 #
 - Images
 #
 - Testing done on comments:
    - Creating, editing and deleting post as authorized user.
-   -Accessing comment as other authenticated user. Read only.
-   - Accessing comment as unathenticated user. Read only.
-   - Test filtering comments of different user's posts.
+      - Successful
+   -Accessing comment as other authenticated user 
+      - Read only.
+   - Accessing comment as unathenticated user 
+      - Read only.
+   - Test filtering comments of different user's posts
 #
 - Images
 #
 - Testing done on like:
-   - Unauthenticated users, no access to liking posts
-   - Authenticated users can like posts.
-   -If tried twice error-page.
-   - Authenticated and authorized user can delete like.
+   - Unauthenticated users
+      - No access to liking posts
+   - Authenticated users can like posts
+      - Successfull
+      -If tried twice error-page.
+   - Authenticated and authorized user can delete like
+      - Successfull
 #
 - Images
 #
 - Testing done on followers:
-   - test following authenticated users as a authenticated user.
-   - No access to follow authenticated user while not logged in.
-   - Successful unfollowing a authentictated user as a logged in user.
-   - A user can't remove an authenticated User from their followers list.
+   - Test following authenticated users as a authenticated user
+   - No access to follow authenticated user while not logged in
+   - Successful unfollowing a authentictated user as a logged in user
+   - A user can't remove an authenticated User from their followers list
+      - Possible improvement
 #
 - Images
 #
 - Testing done on chat:
-- User can initiate contact with another User.
-- That contact can then be transfered to imessages and connect creating a message to the User(owner) and User(contact), with unique Ids on owner, contact and message.
-- User that is owner can access message and has the opurtunity to edit or delete message. 
-- User that is not owner cannot access edit or delete function.
+- User can initiate contact with another User
+- That contact can then be transfered to imessages and connect creating a message to the User(owner) and User(contact), with unique Ids on owner, contact and message
+- User that is owner can access message and has the opurtunity to edit or delete message
+- User that is not owner cannot access edit or delete function
 
 #
 - Images

@@ -68,6 +68,8 @@
    - Solution: change name to imessage, plus related fields.
 - When creating path between contacts/models.py and imessages/models.py, several bugs in connecting the two.
    - Solution: with owner let that be a User from the Django library, with contact let that be imported from contacts/models.py, also save the new messages in imessages/views.py function def perform_create.
+- Accessing pagination in preview renders a faulty url (http://localhost:8000/likes/?page=3), but works if you hardwrite correct url in url-window (https://8000-mikakallber-projectport-0e5hagl364b.ws-eu71.gitpod.io/likes/?page=3). Tutor support concluded that it might not be a problem for front end use, since that access correct url. Unclear if it's an actual bug, but something to keep in mind. 
+   - If problem arises in front end reffer to chat with tutor support and this link: https://stackoverflow.com/questions/33202137/localhost-rejecting-connection-from-application
 #
 ## Bugs left unsolved
 #
