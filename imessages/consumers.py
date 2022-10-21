@@ -3,7 +3,6 @@ import json
 from channels.generic.websocket import AsyncWebsocketConsumer
 from asgiref.sync import sync_to_async
 from django.contrib.auth.models import User
-from contacts.models import Contacts
 from imessages.models import Message
 
 
@@ -59,6 +58,6 @@ class ChatConsumer(AsyncWebsocketConsumer):
     @sync_to_async
     def save_message(self, username, contact, message):
         user = User.objects.get(username=username)
-        contact = Contacts.objects.get(slug=contact)
+        contact = Message.objects.get(slug=contact)
 
         Message.objects.create(user=user, contact=contact, content=message)

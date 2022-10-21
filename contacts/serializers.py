@@ -1,7 +1,7 @@
 """Serialize Contacts model into JSON-data"""
+from django.contrib.humanize.templatetags.humanize import naturaltime
 from rest_framework import serializers
 from .models import Contacts
-from django.contrib.humanize.templatetags.humanize import naturaltime
 
 
 class ContactsSerializer(serializers.ModelSerializer):
@@ -43,6 +43,7 @@ class ContactsSerializer(serializers.ModelSerializer):
             'contact',
             'contact_name',
             'is_owner',
+            'name',
         ]
 
 

@@ -1,7 +1,6 @@
 """ Messages """
 from django.db import models
 from django.contrib.auth.models import User
-from contacts.models import Contacts
 
 
 class Message(models.Model):
@@ -11,12 +10,12 @@ class Message(models.Model):
         related_name='message_owner',
         on_delete=models.CASCADE)
     contact = models.ForeignKey(
-        Contacts,
-        related_name='contacts_contact',
+        User,
+        related_name='message_contact',
         on_delete=models.CASCADE)
     content = models.TextField()
     image = models.ImageField(
-        upload_to='images/', default='../default_post_gbfrps', blank=True
+        upload_to='images/', blank=True
     )
     image_filter_choices = [
         ('_1977', '1977'),
@@ -46,4 +45,4 @@ class Message(models.Model):
 
     def __str__(self):
         """ Returning content """
-        return f'{self.owner} {self.content}'
+        return f'{self.owner} {self.contact} {self.content}'

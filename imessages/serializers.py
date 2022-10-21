@@ -6,8 +6,9 @@ from imessages.models import Message
 
 class MessageSerializer(serializers.ModelSerializer):
     """ Serializing Message model into JSON-data """
-    owner = serializers.ReadOnlyField(source='message_owner.username')
-    contact_name = serializers.ReadOnlyField(source='contacts_contact.username')
+    owner = serializers.ReadOnlyField(source='owner.username')
+    contact_name = serializers.ReadOnlyField(
+        source='contact.username')
     is_owner = serializers.SerializerMethodField()
     profile_id = serializers.ReadOnlyField(source='owner.profile.id')
     profile_image = serializers.ReadOnlyField(

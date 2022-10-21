@@ -3,7 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 from rest_framework import generics, permissions
 from p5_api.permissions import IsOwnerOrReadOnly
-from .models import Contacts
+from contacts.models import Contacts
 from .serializers import ContactsSerializer, ContactsDetailSerializer
 
 
