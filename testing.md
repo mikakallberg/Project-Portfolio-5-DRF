@@ -70,8 +70,8 @@ Profiles created in admin view, has default image
 #
 - Testing done on profile:
    - Possible for superuser to edit user profile in UI
-      - Future testing to see if another regular user can change info on other users.
-   - Testing done on profile 1, 3 and 5 after adding authentication. Testing also in logged out state. Only owner can access edit tool for profile
+      - Other non-superusers cannot change info on other users.
+      - Testing done on profile 1, 3 and 5 after adding authentication. Testing also in logged out state. Only owner can access edit tool for profile
    -After refactoring:
       - test delete profile, successfull
       - No access to delete other users profiles
@@ -84,12 +84,12 @@ Profiles created in admin view, has default image
 - Testing done on post:
    - Unathorized user creating posts
       - No access to tools
-   - Uploading files that are to big
-      - Error message
+   - Post is successfully saved and error message for image file works, both for byte-size and px-size.
+      - Successfull
    - Not filling out title-field
       -Error message
    - View for other authorized users, no edit functionality on posts
-      - No access to tools
+      - Successfull
    - After refactoring:
       - test entire crud functionality and view from non-owner view
    - After adding like_id to posts, testing to see if create and delete like functions successfully.
@@ -107,6 +107,7 @@ Profiles created in admin view, has default image
    - Accessing comment as unathenticated user 
       - Read only.
    - Test filtering comments of different user's posts
+      - Successfull
 #
 - Images
 #
@@ -130,11 +131,18 @@ Profiles created in admin view, has default image
 #
 - Images
 #
-- Testing done on chat:
-- User can initiate contact with another User
-- That contact can then be transfered to imessages and connect creating a message to the User(owner) and User(contact), with unique Ids on owner, contact and message
-- User that is owner can access message and has the opurtunity to edit or delete message
-- User that is not owner cannot access edit or delete function
+- Testing done on imessages:
+   - User can initiate contact with another User
+      - Successfull
+   - That contact can then be transfered to imessages and connect creating a message to the User(owner) and User(contact), with unique Ids on owner, contact and message
+      - Successfull, but severed connection because the path Id path becomes cleaner if both contact and owner originates from imessages, instead of adding another layer of Id with contacts. 
+      - Id initiated in contacts can be used to create multiple person chat rooms instead.
+   - User that is owner can access message and has the opurtunity to edit or delete message
+      - Successfull
+   - User that is not owner cannot access edit or delete function
+      - Successfull
+   - Message is successfully saved and error message for image file works, both for byte-size and px-size.
+      - Successfull
 
 #
 - Images

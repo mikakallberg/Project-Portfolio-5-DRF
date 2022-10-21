@@ -75,6 +75,16 @@
    - [pip3 install django-filter](https://django-filter.readthedocs.io/en/stable/)
    - [pip3 install dj-rest-auth](https://dj-rest-auth.readthedocs.io/en/latest/installation.html)
    - [pip3 install 'dj-rest-auth[with_social]'](https://dj-rest-auth.readthedocs.io/en/latest/installation.html#registration-optional)
+#
+## Set up unique model in Gitpod
+#
+- Install Channels with Daphne ASGI
+   - Consulted both docs and mentor to make sure I dont have any third party apps that will clash with Chanelles or Daphne, since this app will take over the terminal.
+   - python3 -m pip3 install -U channels["daphne"]
+   - Add channels and daphne to p5_api/settings.py/INSTALLED_APPS according to instructions in Channel [documentation](https://channels.readthedocs.io/en/latest/index.html)
+   - Follwed instructions in the video I have taken inpsiration from [Code With Stein](https://www.youtube.com/watch?v=SF1k_Twr9cg)
+   - Changed code according to my class-based project, video from Youtube shows groupchats, my chat is contact-based.
+   - App imessages inhabits the chat, the app contacts has potential to become a groupchat.
 
 #
 * [Back to top](#)

@@ -47,6 +47,7 @@
     - implemented.
         - cascade function needed.
 - In the chat feature (apps contacts and imessage) use permission_required and/or a PermissionRequiredMixin from [Django authentication decorators](https://docs.djangoproject.com/en/4.1/topics/auth/default/#the-permission-required-decorator). To increase User control over who they connect with.
+- Adding Search filter to imessages and or contacts, to give Usser the possibillity to search among their chats and contacts.
 
 #
 * [Back to top](#)

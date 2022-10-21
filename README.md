@@ -101,25 +101,29 @@
 
 ## User Goals
 #
-- As a Site User 
-- As a Site User 
-- As a Site User 
-- As a Site User 
 - As a Site User I can register an account 
-- As a 
-- As a 
-- As a 
-- As a 
-- As a 
+- As a Site user I can delete my account
+- As a Site User I can Create Posts with or without images
+- As a Site User I can Edit and Delete that Post at will
+- As a Site User I can Follow and Unfollow other Users
+- As a Site User I can Comment on other Users Posts
+- As a Site User I can Edit and Delete the Comment I own
+- As a Site User I can Like and Unlike Posts from other Users Posts
+- As a Site User I can Create Contacts with other Users, with or without a name.
+- As a Site User I can Edit and  Delete Contacts with other Users, with or without a name.
+- As a Site User I can Create Messages with other Users
+- As a Site User I can Edit and Delete Messages sent to other Users
 
 ## Credits
 #
 ## Thank you
 - [Spencer Barriball](https://github.com/5pence) for always being there and being a fantastic mentor.
+- Tutors at Code Institute
+- Code Institute Slack-channel community for being the good and funny bunch of people I need!
 
 
 ### Content credits
-
+- For unique models a walkthru video from the account [Code With Stein](https://www.youtube.com/watch?v=SF1k_Twr9cg) was used. However current project is not an exactly the same, the biggest difference is walkthru is a one to many, while this project is one to one.
 
 ### Media
 - For how to make the README nav-bar https://github.com/artkonekt/menu/blob/master/README.md was used.
