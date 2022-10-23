@@ -69,11 +69,13 @@ Successfull launch in Heroku                        |
       - Test if password requirements work
 - Images below are only a sample of all the testing done
 #
-Admin view testing  
-   ![Password requirement](assets/images_readme/password_req.png)
+Admin view testing                                            |
+:------------------------------------------------------------:| 
+![Password requirement](assets/images_readme/password_req.png)|
 #
-Profiles created in admin view, has default image
-   ![Profiles](assets/images_readme/profiles_created_in_admin.png)
+Profiles created in admin view, has default image              |
+:-------------------------------------------------------------:|
+![Profiles](assets/images_readme/profiles_created_in_admin.png)|
 #
 ## Profile
 - Testing done on profile:
@@ -186,8 +188,9 @@ Deleted like access                                                    | Deleted
 :--------------------------------------------------------------------: | :------------------------------------------------------:
  ![Deleted like access](/assets/images_readme/delete_like_access.png)  | ![Deleted like](/assets/images_readme/deleted_like.png)
 #
-Like duplication                                                  
- ![Like duplication](/assets/images_readme/like_duplication.png)
+Like duplication                                                      |
+:--------------------------------------------------------------------:|                                                
+![Like duplication](/assets/images_readme/like_duplication.png)       |
 #
 ## Followers
 - Testing done on followers:
@@ -207,8 +210,9 @@ Follower delete                                                | Followerdetail 
 :------------------------------------------------------------: | :-------------------------------------------------------------------:
  ![Follower delete](/assets/images_readme/follow_deleted.png)  | ![Followerdetail owner](/assets/images_readme/followdetail_owner.png)
 #
-Followerdetail not owner 
- ![Followerdetail not owner ](/assets/images_readme/followerdetail_notowner.png)
+Followerdetail not owner                                                       |
+:-----------------------------------------------------------------------------:|
+![Followerdetail not owner ](/assets/images_readme/followerdetail_notowner.png)|
 #
 ## Messages
 - Testing done on imessages:
@@ -242,8 +246,9 @@ Message error image size byte                                   | Message error 
 :-------------------------------------------------------------: | :-------------------------------------------------------------------:
  ![Error image](/assets/images_readme/error_imagesize_byte.png) | ![Error image](/assets/images_readme/error_imagesizepx.png)
 #
-No default image in message 
- ![No default image in message](/assets/images_readme/nodefault_image_message.png)
+No default image in message                                                       |
+:--------------------------------------------------------------------------------:| 
+ ![No default image in message](/assets/images_readme/nodefault_image_message.png)|
 #
 ## Contacts
 - Testing done on contacts:
