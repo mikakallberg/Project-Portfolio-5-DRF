@@ -74,7 +74,7 @@
 - [SQLite](https://www.sqlite.org/index.html)
   - As database for Gitpod, the initial thought was to use this for unittest.
   The setting is left as part of future features, to have automatic testing instead of manual testing
-  - [Daphne ASGI](https://docs.djangoproject.com/en/4.1/howto/deployment/asgi/daphne/)
+- [Daphne ASGI](https://docs.djangoproject.com/en/4.1/howto/deployment/asgi/daphne/)
 
 ### Frameworks and tools
 - [Django Rest Framework](https://www.django-rest-framework.org/)
