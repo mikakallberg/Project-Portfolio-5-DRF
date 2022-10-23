@@ -1,7 +1,7 @@
 # Social Media API
 
 ![Am I Responsive]()
-## Navigation Through Content
+## Navigation
 #
 * [Deployed page]()
 * [Learning Outcomes](#learning-outcomes)
@@ -10,7 +10,7 @@
    - [Initial planning](#initial-plan)
    - [Plan](#plan)
    - [Lucid Chart](#lucidchart)
-* [Initial SetUp](/setup.md)
+* [SetUp](/setup.md)
    - [Set up repository](/setup.md#set-up-repository)
    - [Set up project in GitPod](/setup.md#set-up-project-in-gitpod)
    - [Set up unique model in Gitpod](/setup.md#set-up-unique-model-in-gitpod)
@@ -18,10 +18,17 @@
     - [Demographics](#demographics)
     - [User Goal](#user-goals)
 * [Features](/features.md)
-   - [Existing features](/features.md#existing-features)
-   - [Possible improvements](/features.md#features-left-to-implement)
+   - [Existing Features](/features.md#existing-features)
+       - [Profile](/features.md#profile)
+       - [Post](/features.md#post)
+       - [Comments](/features.md#comments)
+       - [Likes](/features.md#likes)
+       - [Followers](/features.md#followers)
+       - [Messages](/features.md#messages)
+       - [Contacts](/features.md#contacts)
+   - [New Features](/features.md#new-features)
 * [Testing](/testing.md)
-     - [First setup](/testing.md#first-setup)
+    - [First setup](/testing.md#first-setup)
     - [Testing in development](/testing.md#testing-in-development)
     - [Profile](/testing.md#profile)
     - [Post](/testing.md#post)
@@ -34,6 +41,8 @@
     - [Bugs in development](/bugs.md#bugs-in-development)
     - [Bugs left unsolved](/bugs.md#bugs-left-unsolved)
 * [Deployment](/deployment.md)
+    - [Initial Deployment](/deployment.md#initial-deployment)
+    - [Final Deployment](/deployment.md#final-deployment)
 * [Credits](#credits)
     - [Mentoring](#thank-you)
     - [Content credits](#content-credits)

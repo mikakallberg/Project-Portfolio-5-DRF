@@ -1,51 +1,97 @@
-# Name pending
-
-## Navigation Through Content
+# Social Media API
+## Navigation
 #
 * [Deployed page]()
-* [Project Purpose](#project-purpose)
-    - [Learning Outcomes](#learning-outcomes)
-    - [Project Requirements](#project-requirements)
-* [Initial Planning](/deployment.md)
-* [Initial SetUp](/setup.md)
-    - [Set up repository](#set-up-repository)
-    - [Set up project in GitPod](#set-up-project-in-gitpod)
-    - [Set up....]()
-* [User Experience](#user-experience-ux)
-    - [Demographics](#demographics)
-    - [User Goal](#user-goals)
+* [Learning Outcomes](/README.md#learning-outcomes)
+* [Technologies and Libraries](/README.md#technologies-and-libraries)
+* [Planning](/README.md#planning)
+   - [Initial planning](/README.md#initial-plan)
+   - [Plan](/README.md#plan)
+   - [Lucid Chart](/README.md#lucidchart)
+* [SetUp](/setup.md)
+   - [Set up repository](/setup.md#set-up-repository)
+   - [Set up project in GitPod](/setup.md#set-up-project-in-gitpod)
+   - [Set up unique model in Gitpod](/setup.md#set-up-unique-model-in-gitpod)
+* [User Experience](/README.md#user-experience-ux)
+    - [Demographics](/README.md#demographics)
+    - [User Goal](/README.md#user-goals)
 * [Features](/features.md)
-   - [Existing features](/features.md#existing-features)
-   - [Possible improvements](/features.md#features-left-to-implement)
+   - [Existing Features](#existing-features)
+        - [Profile](#profile)
+        - [Post](#post)
+        - [Comments](#comments)
+        - [Likes](#likes)
+        - [Followers](#followers)
+        - [Messages](#messages)
+        - [Contacts](#contacts)
+   - [New Features](#new-features)
 * [Testing](/testing.md)
-    - [Validator Testing](/testing.md#validator-testing)
-    - [Manual testing](/testing.md#manual-testing)
-    - [Automated Testing](/testing.md#automated-testing)
+     - [First setup](/testing.md#first-setup)
+    - [Testing in development](/testing.md#testing-in-development)
+    - [Profile](/testing.md#profile)
+    - [Post](/testing.md#post)
+    - [Comments](/testing.md#comments)
+    - [Likes](/testing.md#likes)
+    - [Followers](/testing.md#followers)
+    - [Messages](/testing.md#messages)
+    - [Contacts](/testing.md#contacts)
 * [Bugs](/bugs.md)
+    - [Bugs in development](/bugs.md#bugs-in-development)
+    - [Bugs left unsolved](/bugs.md#bugs-left-unsolved)
 * [Deployment](/deployment.md)
-* [Credits](#credits)
-    - [Mentoring](#mentoring)
-    - [Content credits](#content-credits)
-    - [Media](/credits.md)
-      -[Blog Content credits](/credits.md#blog-content-credits)
-        - [Why Soil Matters](/credits.md#why-soil-matters)
-        - [How to grow tomatoes](/credits.md#how-to-grow-tomatoes)
-        - [How to grow carrots](/credits.md#how-to-grow-carrots)
-        - [The humble potatoe](/credits.md#the-humble-potatoe)
-        - [The frail but worth it salad](/credits.md#the-frail-but-worth-it-salad)
-        - [The hearty onion](/credits.md#the-hearty-onion)
-        - [The plump Bell Pepper](/credits.md#the-plump-bell-pepper)
-     - [Image Credits](/credits.md#image-credits)
-        - [About us picture](/credits.md#about-us-picture)
-        - [Favicons](/credits.md#favicons)
-        - [Creation Credits](/credits.md#creation-credits)
+    - [Initial Deployment](/deployment.md#initial-deployment)
+    - [Final Deployment](/deployment.md#final-deployment)
+* [Credits](/README.md#credits)
+    - [Mentoring](/README.md#thank-you)
+    - [Content credits](/README.md#content-credits)
+    - [Media](/README.md#media)
 #
-## Agile development
+## Existing Features
+#
+### Profile
+- Anonymous User can register and create a profile
+- Users can log in to their profile
+- Users can see registered profiles
+- Users can see a list of other Users
+- Users can see the a detail view of other users
+#
+### Post
+- Anonymous User and registered Users can see public posts
+- Users can create posts with or without images
+- Users can edit posts that they own
+- Users can delete posts that they own
+#
+### Comments
+- Anonymous User and Users can see public comments
+- Users can create a comment on a post
+- Users can edit a comment they have created
+- Users can delete a comment they have created
+#
+### Likes
+- Anonymous User and Users can see likes on posts
+- Users can like a post
+- Users can unlike a post
+#
+### Followers
+- Anonymous User and Users can see followers
+- Users can follow a User
+- Users can unfollow a User
+#
+### Messages
+- If user is logged in they can access messages
+- Users can connect with other Users
+- Users can create a message to another user with or without a image
+- Users can edit a message they have sent to another user
+- users can delete a message they have sent to another user
+#
+### Contacts
+- If user is logged in they can access contacts
+- Users can connect with other Users
+- Users can name this connection
+#
+## New Features
 #
 - Give User control of their followers list, by adding delete and/or block function.
-- Give User the possibility to delete their whole profile.
-    - implemented.
-        - cascade function needed.
 - In the chat feature (apps contacts and imessage) use permission_required and/or a PermissionRequiredMixin from [Django authentication decorators](https://docs.djangoproject.com/en/4.1/topics/auth/default/#the-permission-required-decorator). To increase User control over who they connect with.
 - Adding Search filter to imessages and or contacts, to give Usser the possibillity to search among their chats and contacts.
 
