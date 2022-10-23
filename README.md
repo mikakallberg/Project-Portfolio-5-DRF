@@ -4,10 +4,16 @@
 ## Navigation Through Content
 #
 * [Deployed page]()
-* [Project Purpose](#project-purpose)
-    - [Learning Outcomes](#learning-outcomes)
-* [Initial Planning](/deployment.md)
+* [Learning Outcomes](#learning-outcomes)
+* [Technologies and Libraries](#technologies-and-libraries)
+* [Planning](#planning)
+   - [Initial planning](#initial-plan)
+   - [Plan](#plan)
+   - [Lucid Chart](#lucidchart)
 * [Initial SetUp](/setup.md)
+   - [Set up repository](/setup.md#set-up-repository)
+   - [Set up project in GitPod](/setup.md#set-up-project-in-gitpod)
+   - [Set up unique model in Gitpod](/setup.md#set-up-unique-model-in-gitpod)
 * [User Experience](#user-experience-ux)
     - [Demographics](#demographics)
     - [User Goal](#user-goals)
@@ -15,15 +21,23 @@
    - [Existing features](/features.md#existing-features)
    - [Possible improvements](/features.md#features-left-to-implement)
 * [Testing](/testing.md)
-    - [Validator Testing](/testing.md#validator-testing)
-    - [Manual testing](/testing.md#manual-testing)
-    - [Automated Testing](/testing.md#automated-testing)
+     - [First setup](/testing.md#first-setup)
+    - [Testing in development](/testing.md#testing-in-development)
+    - [Profile](/testing.md#profile)
+    - [Post](/testing.md#post)
+    - [Comments](/testing.md#comments)
+    - [Likes](/testing.md#likes)
+    - [Followers](/testing.md#followers)
+    - [Messages](/testing.md#messages)
+    - [Contacts](/testing.md#contacts)
 * [Bugs](/bugs.md)
+    - [Bugs in development](/bugs.md#bugs-in-development)
+    - [Bugs left unsolved](/bugs.md#bugs-left-unsolved)
 * [Deployment](/deployment.md)
 * [Credits](#credits)
-    - [Mentoring](#mentoring)
+    - [Mentoring](#thank-you)
     - [Content credits](#content-credits)
-    - [Media](/credits.md)  
+    - [Media](#media)  
 #
 ## Learning Outcomes
 - Design an interactive Front-End web application using HTML, CSS and advanced JavaScript, based on component composition and separation of concerns.
@@ -32,10 +46,9 @@
 - Create an Application Programming Interface (current repository) for comsumption by 3rd party applications.
    - Create Unique models.
       - Number of models created four, two in contacts and two in imessages.
-      - models in contacts can be developed into one more for a group chat.
 - Create an Interactive Front-End application that consumes API data.
 #
-## Technologies and Libraries used
+## Technologies and Libraries
 
 ### Languages used
 - [Django](https://www.djangoproject.com/) 
@@ -46,22 +59,22 @@
 
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript)
 
-### Databases
+### Databases and server gateways
 - [Postgresql](https://www.postgresql.org/)
   - As database in Heroku
 - [SQLite](https://www.sqlite.org/index.html)
   - As database for Gitpod, the initial thought was to use this for unittest.
   The setting is left as part of future features, to have automatic testing instead of manual testing
+  - [Daphne ASGI](https://docs.djangoproject.com/en/4.1/howto/deployment/asgi/daphne/)
 
 ### Frameworks and tools
-- [Bootstrap](https://getbootstrap.com/)
-- [Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)
-- [Summernote](https://summernote.org/)
-- [Fontawesome](https://fontawesome.com/)
-- [Django-Crispyforms](https://django-crispy-forms.readthedocs.io/en/latest/)
-- [Django-Copyright](https://pypi.org/project/django-copyright/)
-- [Google fonts](https://fonts.google.com/specimen/Playfair+Display?category=Serif,Sans+Serif#standard-styles)
-- [Channels with Dahpne ASGI](https://channels.readthedocs.io/en/latest/index.html)
+- [Django Rest Framework](https://www.django-rest-framework.org/)
+- [Channels-redis](https://channels.readthedocs.io/en/latest/index.html) 
+   - Websocket tool
+- [Pillow](https://pillow.readthedocs.io/en/stable/reference/Image.html)
+- [Psycopg2](https://pypi.org/project/psycopg2/)
+- [JSON Web Tokens](https://jwt.io/)
+
 
 ### Cloud storage and deployment services
 - [Cloudinary](https://cloudinary.com/)
@@ -82,13 +95,10 @@ Initially this project was planned as a planner tool, but after consulting  my m
 ### LucidChart
 #
 ![LucidChart](/assets/images_readme/lucidchart.png)
-
-## User Experience (UX)
 #
 ## Demographics
-- The intended user for this API is someone who wants to build a front end view consistent with the below stated [User Goals](#user-goals).
-
-
+- The intended user for this API is someone who wants to build a Front-End application consistent with the below stated [User Goals](#user-goals).
+#
 ## User Goals
 #
 - As a Site User I can register an account 
@@ -113,7 +123,7 @@ Initially this project was planned as a planner tool, but after consulting  my m
 
 
 ### Content credits
-- For unique models a walkthru video from the account [Code With Stein](https://www.youtube.com/watch?v=SF1k_Twr9cg) was used. However current project is not an exactly the same, the biggest difference is walkthru is a one to many, while this project is one to one.
+- For unique models a walkthru video from the account [Code With Stein](https://www.youtube.com/watch?v=SF1k_Twr9cg) was used. However current project is not exactly the same, the biggest difference is the walkthru is a one to many relationship, while the chat function in this project is mainly a one to one relationship. Howevere there is a possibility to expand the app named contacts to include a one to many chat.
 
 ### Media
 - For how to make the README nav-bar https://github.com/artkonekt/menu/blob/master/README.md was used.

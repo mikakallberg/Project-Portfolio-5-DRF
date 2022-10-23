@@ -14,7 +14,8 @@ class Post(models.Model):
     title = models.CharField(max_length=255)
     content = models.TextField(blank=True)
     image = models.ImageField(
-        upload_to='images/', default='../default_post_gbfrps', blank=True
+        upload_to='images/',
+        blank=True
     )
     image_filter_choices = [
         ('_1977', '1977'),
