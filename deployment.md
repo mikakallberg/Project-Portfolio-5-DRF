@@ -53,12 +53,14 @@
     - Installed databases(Please view setup for more information):
         - psycopg2 and dj-database-url
         - django-cors-headers
+        - Add Procfile with release versions makemigrations && migrate, and web(web gateway interface).
+        - Add Heroku app to ALLOWED_HOSTS in settings.py
     - In Heroku:
        - Create app in Heroku
            - This was done according to previous plan, so app name was later changed.
            With changes being made in Gitpod workspace and Config vars in Heroku, to ensure functionality cross platforms.
        - Download Heroku Postgres-database
-       - Ensure latest version pushedfrom Gitpod to Github.
+       - Ensure latest version pushed from Gitpod to Github.
        -Connect App in Heroku to workspace in Github.
        - Config vars
            - ALLOWED_HOSTS
@@ -93,14 +95,19 @@ Successfull launch in Heroku                        |
         - if-statements for CLIENT_ORIGIN_DEV, for using different urls in deployment and production.
     - CORS_ALLOWED_CREDENTIALS, to enable cookie authetication so the User is able to automatically be logged from the same source within a 24 hour window.
     - JW-tokens for cookies and secure https-url connection. 
-       - This project will only collect cookies so that the user can log in automatically during a 24 hour window. It will not collect any stattistics or any other information the user.
+       - This project will only collect cookies so that the user can log in automatically during a 24 hour window. It will not collect any statistics or any other information on the user.
        - A serializer-file was created in project app to serialize the cookie information.
-    -Debug is to a os.environ variable, so that when in production debug will be true, but not in production.
+    -Debug is set to a os.environ variable, so that when in production debug will be true, but not in production.
     - Allowed hosts are set to a os-environ variable to allow multiple outside projects to use this API.
     - Change Allowed hosts in Heroku config vars to match the name string used in settings.py.
     - A root_route page is created in the project app also a logout route, to enable users to logout properly.
     - Deploy page in Heroku successful.
-
+    - Ensure that all apps with functions exists in the final deployed version as in development version.
+        - exists in JSON-data
+#
+ Heroku contactlist                                                  | Heroku messagelist 
+:------------------------------------------------------------------: | :---------------------------------------------------------------:
+ ![Heroku contactlist](/assets/images_readme/heroku_contactlist.png) | ![Heroku messagelist](/assets/images_readme/heroku_messagelist.png)
 #
 * [Back to top](#)
 #

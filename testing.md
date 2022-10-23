@@ -138,7 +138,7 @@ Post owner delete access                                         | Postdetail de
 Post owner edit                                                  | Postdetail no post
 :--------------------------------------------------------------: | :--------------------------------------------------------------:
  ![Postedit](/assets/images_readme/test_edit_post.png)           | ![Post no post](/assets/images_readme/test_404_post_detail.png)
- #
+#
  Post error image size byte                                        | Post error image size pixels 
 :----------------------------------------------------------------: | :---------------------------------------------------------------:
  ![Error image](/assets/images_readme/error_postimagesizebyte.png) | ![Error image](/assets/images_readme/error_postimagesizepx.png)
