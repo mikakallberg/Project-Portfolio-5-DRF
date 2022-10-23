@@ -1,44 +1,43 @@
-# Name pending
+# Social Media API
 
+![Am I Responsive]()
 ## Navigation Through Content
 #
 * [Deployed page]()
-* [Project Purpose](#project-purpose)
-    - [Learning Outcomes](#learning-outcomes)
-    - [Project Requirements](#project-requirements)
-* [Initial Planning](/deployment.md)
+* [Learning Outcomes](/README.md#learning-outcomes)
+* [Technologies and Libraries](/README.md#technologies-and-libraries)
+* [Planning](/README.md#planning)
+   - [Initial planning](/README.md#initial-plan)
+   - [Plan](/README.md#plan)
+   - [Lucid Chart](/README.md#lucidchart)
 * [Initial SetUp](/setup.md)
-    - [Set up repository](#set-up-repository)
-    - [Set up project in GitPod](#set-up-project-in-gitpod)
-    - [Set up....]()
-* [User Experience](#user-experience-ux)
-    - [Demographics](#demographics)
-    - [User Goal](#user-goals)
+   - [Set up repository](/setup.md#set-up-repository)
+   - [Set up project in GitPod](/setup.md#set-up-project-in-gitpod)
+   - [Set up unique model in Gitpod](/setup.md#set-up-unique-model-in-gitpod)
+* [User Experience](/README.md#user-experience-ux)
+    - [Demographics](/README.md#demographics)
+    - [User Goal](/README.md#user-goals)
 * [Features](/features.md)
    - [Existing features](/features.md#existing-features)
    - [Possible improvements](/features.md#features-left-to-implement)
 * [Testing](/testing.md)
-    - [Validator Testing](/testing.md#validator-testing)
-    - [Manual testing](/testing.md#manual-testing)
-    - [Automated Testing](/testing.md#automated-testing)
+     - [First setup](/testing.md#first-setup)
+    - [Testing in development](/testing.md#testing-in-development)
+    - [Profile](/testing.md#profile)
+    - [Post](/testing.md#post)
+    - [Comments](/testing.md#comments)
+    - [Likes](/testing.md#likes)
+    - [Followers](/testing.md#followers)
+    - [Messages](/testing.md#messages)
+    - [Contacts](/testing.md#contacts)
 * [Bugs](/bugs.md)
+   - [Bugs in development](#bugs-in-development)
+   - [Bugs left unsolved](#bugs-left-unsolved)
 * [Deployment](/deployment.md)
-* [Credits](#credits)
-    - [Mentoring](#mentoring)
-    - [Content credits](#content-credits)
-    - [Media](/credits.md)
-      -[Blog Content credits](/credits.md#blog-content-credits)
-        - [Why Soil Matters](/credits.md#why-soil-matters)
-        - [How to grow tomatoes](/credits.md#how-to-grow-tomatoes)
-        - [How to grow carrots](/credits.md#how-to-grow-carrots)
-        - [The humble potatoe](/credits.md#the-humble-potatoe)
-        - [The frail but worth it salad](/credits.md#the-frail-but-worth-it-salad)
-        - [The hearty onion](/credits.md#the-hearty-onion)
-        - [The plump Bell Pepper](/credits.md#the-plump-bell-pepper)
-     - [Image Credits](/credits.md#image-credits)
-        - [About us picture](/credits.md#about-us-picture)
-        - [Favicons](/credits.md#favicons)
-        - [Creation Credits](/credits.md#creation-credits)
+* [Credits](/README.md#credits)
+    - [Mentoring](/README.md#thank-you)
+    - [Content credits](/README.md#content-credits)
+    - [Media](/README.md#media)  
 #
 ## Bugs in development
 #
@@ -51,6 +50,8 @@
 - During initial deployment to Heroku.
     - Error message: application error
     - Solution: With the help of Tutor support we found spelling errors in multiple places of allowed hosts. When these where solved deployment was successfull. 
+- In initial deployment to Heroku, app did not launch. 
+  - Looked through code to spot typos and typos in heroku settings. Found a couple, with the help of Gemma at tutor support, also hard set the allowed hosts to the heroku url.
 - After the workspace timed out and was deleted, couldn't get the preview to run, after creating a new env-file from Heroku Config Vars.
    - solution reinstall dependencies with 'pip3 install -r requirements.txt'.
 - In production of chat application, several error messages occured. Most had to do with naming and missing routes between files, but one was a OperationalError, tht did not want to resolve itself with convential methods.
@@ -75,15 +76,13 @@
 #
 - In settings.py the following bugs is left unsolved:
    - 're' imported but unused
-      - It is not being unused [Python doc on re](https://docs.python.org/3/library/re.html).
+      - It is not being unused [Python docs on re](https://docs.python.org/3/library/re.html).
    -'env' imported but unused
       - The env is in an if statement and is therefore under conditional use. In localhost as in preview the env-file is implemented,
         where as in Heroku cofig vars are used.
    - 4 line to long on line 102, 105, 108 and 111. 
       - These can't be modified, since doing so will create a more serious error that affects functionality.
-- In initial deployment to Heroku, app did not launch. 
-  - Looked through code to spot typos and typos in heroku settings. Found a couple, with the help of Gemma at tutor support, also hard set the allowed hosts to the heroku url.
-      - Bug fixed.
+- Pylints:
 
 #
 * [Back to top](#)

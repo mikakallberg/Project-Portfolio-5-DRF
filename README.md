@@ -1,4 +1,4 @@
-# Name pending
+# Social Media API
 
 ![Am I Responsive]()
 ## Navigation Through Content
@@ -6,7 +6,6 @@
 * [Deployed page]()
 * [Project Purpose](#project-purpose)
     - [Learning Outcomes](#learning-outcomes)
-    - [Project Requirements](#project-requirements)
 * [Initial Planning](/deployment.md)
 * [Initial SetUp](/setup.md)
 * [User Experience](#user-experience-ux)
@@ -24,32 +23,17 @@
 * [Credits](#credits)
     - [Mentoring](#mentoring)
     - [Content credits](#content-credits)
-    - [Media](/credits.md)
-
-## Project Purpose
-#
-(Taken from Assessment Handbook provided by Code Institute)
-#
-- Project purpose:
-  
+    - [Media](/credits.md)  
 #
 ## Learning Outcomes
-- Use an Agile methodology to plan and design a Full-Stack Web application using an MVC framework and related contemporary technologies.
-- - [see User goals](#user-goals)
-- - [Checklist in deployment](/deployment.md)
-- Implement a data model, application features and business logic to manage, query and manipulate data to meet given needs in a particular real-world domain.
-- - [see Features](/features.md)
-- Identify and apply authorisation, authentication and permission features in a Full-Stack web application solution.
-- - [see Features](/features.md)
-- Create manual and/or automated tests for a Full-Stack Web application using an MVC framework and related contemporary technologies.
-- - [see Testing](/testing.md)
-- Use a distributed version control system and a repository hosting service to document, develop and maintain a Full-Stack Web application using an MVC framework and related contemporary technologies.
-- - [GitHub](https://github.com)
-- Deploy a Full-Stack Web application using an MVC framework and related contemporary technologies to a cloud-based platform.
-- - [Heroku](https://www.heroku.com/)
-- Understand and use object-based software concepts
-- - [see Features](/features.md)
-
+- Design an interactive Front-End web application using HTML, CSS and advanced JavaScript, based on component composition and separation of concerns.
+   - For more information see [Front-End Repository]()<--- Put in link when done!
+- Explain the key role that specialist Front-End developers perform in modern software development/delivery terms.
+- Create an Application Programming Interface (current repository) for comsumption by 3rd party applications.
+   - Create Unique models.
+      - Number of models created four, two in contacts and two in imessages.
+      - models in contacts can be developed into one more for a group chat.
+- Create an Interactive Front-End application that consumes API data.
 #
 ## Technologies and Libraries used
 
@@ -64,9 +48,9 @@
 
 ### Databases
 - [Postgresql](https://www.postgresql.org/)
-- - As database in Heroku
+  - As database in Heroku
 - [SQLite](https://www.sqlite.org/index.html)
-- - As database for Gitpod, the initial thought was to use this for unittest.
+  - As database for Gitpod, the initial thought was to use this for unittest.
   The setting is left as part of future features, to have automatic testing instead of manual testing
 
 ### Frameworks and tools
@@ -77,27 +61,33 @@
 - [Django-Crispyforms](https://django-crispy-forms.readthedocs.io/en/latest/)
 - [Django-Copyright](https://pypi.org/project/django-copyright/)
 - [Google fonts](https://fonts.google.com/specimen/Playfair+Display?category=Serif,Sans+Serif#standard-styles)
+- [Channels with Dahpne ASGI](https://channels.readthedocs.io/en/latest/index.html)
 
 ### Cloud storage and deployment services
 - [Cloudinary](https://cloudinary.com/)
 - [Heroku](https://www.heroku.com/)
 - [Gunicorn](https://gunicorn.org/)
 
-
-## Initial planning
+#
+## Planning
 #
 ### Initial plan
-
 #
-
+Initially this project was planned as a planner tool, but after consulting  my mentor, it was switched to follow the walkthrough from the lessons on Rest-framework and React. The wireframe for that initial plan can be found if you follow this link: https://mikakallberg.github.io/wireframe-planner/
 #
 ### Plan
-
+#
+- The current direction for this project is to follow the walkthrough given by Code Institute and add two unique models. These are Message in app imessages and Contacts in contacts. Which where added to give the User an opurtunity to message other Users directly and have private conversations.
+#
+### LucidChart
+#
+![LucidChart](/assets/images_readme/lucidchart.png)
 
 ## User Experience (UX)
 #
 ## Demographics
-- 
+- The intended user for this API is someone who wants to build a front end view consistent with the below stated [User Goals](#user-goals).
+
 
 ## User Goals
 #
@@ -112,7 +102,7 @@
 - As a Site User I can Create Contacts with other Users, with or without a name.
 - As a Site User I can Edit and  Delete Contacts with other Users, with or without a name.
 - As a Site User I can Create Messages with other Users
-- As a Site User I can Edit and Delete Messages sent to other Users
+- As a Site User I can Edit and Delete Messages I sent to other Users
 
 ## Credits
 #

@@ -1,44 +1,41 @@
-# Name pending
+# Social Media API
 
+![Am I Responsive]()
 ## Navigation Through Content
 #
 * [Deployed page]()
-* [Project Purpose](#project-purpose)
-    - [Learning Outcomes](#learning-outcomes)
-    - [Project Requirements](#project-requirements)
-* [Initial Planning](/deployment.md)
+* [Learning Outcomes](/README.md#learning-outcomes)
+* [Technologies and Libraries](/README.md#technologies-and-libraries)
+* [Planning](/README.md#planning)
+   - [Initial planning](/README.md#initial-plan)
+   - [Plan](/README.md#plan)
+   - [Lucid Chart](/README.md#lucidchart)
 * [Initial SetUp](/setup.md)
-    - [Set up repository](#set-up-repository)
-    - [Set up project in GitPod](#set-up-project-in-gitpod)
-    - [Set up....]()
-* [User Experience](#user-experience-ux)
-    - [Demographics](#demographics)
-    - [User Goal](#user-goals)
+   - [Set up repository](/setup.md#set-up-repository)
+   - [Set up project in GitPod](/setup.md#set-up-project-in-gitpod)
+   - [Set up unique model in Gitpod](/setup.md#set-up-unique-model-in-gitpod)
+* [User Experience](/README.md#user-experience-ux)
+    - [Demographics](/README.md#demographics)
+    - [User Goal](/README.md#user-goals)
 * [Features](/features.md)
    - [Existing features](/features.md#existing-features)
    - [Possible improvements](/features.md#features-left-to-implement)
 * [Testing](/testing.md)
-    - [Validator Testing](/testing.md#validator-testing)
-    - [Manual testing](/testing.md#manual-testing)
-    - [Automated Testing](/testing.md#automated-testing)
+    - [First setup](#first-setup)
+    - [Testing in development](#testing-in-development)
+    - [Profile](#profile)
+    - [Post](#post)
+    - [Comments](#comments)
+    - [Likes](#likes)
+    - [Followers](#followers)
+    - [Messages](#messages)
+    - [Contacts](#contacts)
 * [Bugs](/bugs.md)
 * [Deployment](/deployment.md)
-* [Credits](#credits)
-    - [Mentoring](#mentoring)
-    - [Content credits](#content-credits)
-    - [Media](/credits.md)
-      -[Blog Content credits](/credits.md#blog-content-credits)
-        - [Why Soil Matters](/credits.md#why-soil-matters)
-        - [How to grow tomatoes](/credits.md#how-to-grow-tomatoes)
-        - [How to grow carrots](/credits.md#how-to-grow-carrots)
-        - [The humble potatoe](/credits.md#the-humble-potatoe)
-        - [The frail but worth it salad](/credits.md#the-frail-but-worth-it-salad)
-        - [The hearty onion](/credits.md#the-hearty-onion)
-        - [The plump Bell Pepper](/credits.md#the-plump-bell-pepper)
-     - [Image Credits](/credits.md#image-credits)
-        - [About us picture](/credits.md#about-us-picture)
-        - [Favicons](/credits.md#favicons)
-        - [Creation Credits](/credits.md#creation-credits)
+* [Credits](/README.md#credits)
+    - [Mentoring](/README.md#thank-you)
+    - [Content credits](/README.md#content-credits)
+    - [Media](/README.md#media)  
 #
 ## First setup
 #
@@ -68,6 +65,7 @@ Admin view testing
 Profiles created in admin view, has default image
    ![Profiles](assets/images_readme/profiles_created_in_admin.png)
 #
+## Profile
 - Testing done on profile:
    - Possible for superuser to edit user profile in UI
       - Other non-superusers cannot change info on other users.
@@ -81,6 +79,7 @@ Profiles created in admin view, has default image
 #
 - Images
 #
+## Post
 - Testing done on post:
    - Unathorized user creating posts
       - No access to tools
@@ -99,6 +98,7 @@ Profiles created in admin view, has default image
 #
 - Images
 #
+## Comments
 - Testing done on comments:
    - Creating, editing and deleting post as authorized user.
       - Successful
@@ -111,6 +111,7 @@ Profiles created in admin view, has default image
 #
 - Images
 #
+## Likes
 - Testing done on like:
    - Unauthenticated users
       - No access to liking posts
@@ -122,6 +123,7 @@ Profiles created in admin view, has default image
 #
 - Images
 #
+## Followers
 - Testing done on followers:
    - Test following authenticated users as a authenticated user
    - No access to follow authenticated user while not logged in
@@ -131,7 +133,11 @@ Profiles created in admin view, has default image
 #
 - Images
 #
+## Messages
 - Testing done on imessages:
+   - User need to be logged in to access view
+      - Successfull 
+      - Shows 404 page if user is not logged in
    - User can initiate contact with another User
       - Successfull
    - That contact can then be transfered to imessages and connect creating a message to the User(owner) and User(contact), with unique Ids on owner, contact and message
@@ -147,6 +153,17 @@ Profiles created in admin view, has default image
 #
 - Images
 #
+## Contacts
+- Testing done on contacts:
+   - User need to be logged in to access view
+      - Successfull
+      - Shows 404 page if user is not logged in
+   - User can initiate contact with another User
+      - Successfull
+   - User can remove their contact with another User
+      - Successfull
+#
+- Images
 #
 * [Back to top](#)
 #

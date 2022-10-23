@@ -9,6 +9,7 @@ from imessages.models import Message
 class ChatConsumer(AsyncWebsocketConsumer):
     """ Connecting """
     async def connect(self):
+        """ Asynchronously connecting users """
         self.contact_name = self.scope['url_route']['kwargs']['contact_name']
         self.contact_group_name = 'chat_%s' % self.contact_name
 
@@ -20,12 +21,14 @@ class ChatConsumer(AsyncWebsocketConsumer):
         await self.accept()
 
     async def disconnect(self):
+        """ Asynchronously disconnect from chat """
         await self.channel_layer.group_discard(
             self.contact_group_name,
             self.channel_name
         )
 
     async def receive(self, text_data):
+        """ Asynchronously recieve message """
         data = json.loads(text_data)
         message = data['message']
         username = data['username']
@@ -44,6 +47,7 @@ class ChatConsumer(AsyncWebsocketConsumer):
         )
 
     async def chat_message(self, event):
+        """ Chat messages """
         message = event['message']
         username = event['username']
         contact = event['contact']
@@ -57,6 +61,7 @@ class ChatConsumer(AsyncWebsocketConsumer):
 # Enable storing in database
     @sync_to_async
     def save_message(self, username, contact, message):
+        """ Asynchronously save messages in chat """
         user = User.objects.get(username=username)
         contact = Message.objects.get(slug=contact)
 
