@@ -3,7 +3,8 @@
 ![Am I Responsive]()
 ## Navigation
 #
-* [Deployed page]()
+* [Deployed Front-End page]()
+* [Deployed Back-End page](https://portfolio-project-5-drf-api.herokuapp.com/)
 * [Learning Outcomes](#learning-outcomes)
 * [Technologies and Libraries](#technologies-and-libraries)
 * [Planning](#planning)
@@ -50,7 +51,7 @@
 #
 ## Learning Outcomes
 - Design an interactive Front-End web application using HTML, CSS and advanced JavaScript, based on component composition and separation of concerns.
-   - For more information see [Front-End Repository]()<--- Put in link when done!
+   - For more information see [Front-End Repository](https://github.com/mikakallberg/cozycorner)
 - Explain the key role that specialist Front-End developers perform in modern software development/delivery terms.
 - Create an Application Programming Interface (current repository) for comsumption by 3rd party applications.
    - Create Unique models.
