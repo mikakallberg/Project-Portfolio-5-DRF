@@ -22,7 +22,7 @@ class MessageSerializer(serializers.ModelSerializer):
         """
         Acceptable image size by px and byte.
         """
-        if value.size > 2 * 1024 * 1024:
+        if value.size > 2097152:
             raise serializers.ValidationError('Image size larger than 2MB!')
         if value.image.width > 4096:
             raise serializers.ValidationError(

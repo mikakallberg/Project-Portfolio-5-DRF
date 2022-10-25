@@ -34,7 +34,7 @@ class Post(models.Model):
         ('xpro2', 'X-pro II')
     ]
     image_filter = models.CharField(
-        max_length=32, choices=image_filter_choices, default='normal'
+        max_length=12, choices=image_filter_choices, default='normal'
     )
 
     class Meta:
