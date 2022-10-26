@@ -26,7 +26,7 @@ class CommentSerializer(serializers.ModelSerializer):
 
     def get_updated_at(self, obj):
         """ Time of comment update """
-        return naturaltime(obj.created_at)
+        return naturaltime(obj.updated_at)
 
     class Meta:
         """ Which assets are shown with comment """
