@@ -117,7 +117,7 @@ Initially this project was planned as a planner tool, but after consulting  my m
 #
 - As a Site User I can register an account 
 - As a Site user I can delete my account
-- As a Site User I can Create Posts with or without images
+- As a Site User I can Create Posts
 - As a Site User I can Edit and Delete that Post at will
 - As a Site User I can Follow and Unfollow other Users
 - As a Site User I can Comment on other Users Posts

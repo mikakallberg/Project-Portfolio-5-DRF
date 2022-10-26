@@ -15,6 +15,7 @@ class Post(models.Model):
     content = models.TextField(blank=True)
     image = models.ImageField(
         upload_to='images/',
+        default='../default_post_gbfrps',
         blank=True
     )
     image_filter_choices = [
