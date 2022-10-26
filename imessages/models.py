@@ -15,7 +15,7 @@ class Message(models.Model):
         on_delete=models.CASCADE)
     content = models.TextField()
     image = models.ImageField(
-        upload_to='images/', blank=True
+        upload_to='images/', default=None, blank=True
     )
     image_filter_choices = [
         ('_1977', '1977'),
