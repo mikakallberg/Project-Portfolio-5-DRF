@@ -53,7 +53,7 @@
 
  
 #
-## Learning Outcomes
+## Project Goals
 - Design an interactive Front-End web application using HTML, CSS and advanced JavaScript, based on component composition and separation of concerns.
    - For more information see [Front-End Repository](https://github.com/mikakallberg/cozycorner)
 - Explain the key role that specialist Front-End developers perform in modern software development/delivery terms.
