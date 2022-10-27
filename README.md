@@ -1,6 +1,6 @@
 # Social Media API
 
-![Am I Responsive]()
+![Am I Responsive](/assets/images_readme/amiresponsive.png)
 #
 * [Deployed Front-End page](https://cozycorner-pp5.herokuapp.com/)
 * [Deployed Back-End page](https://portfolio-project-5-drf-api.herokuapp.com/)

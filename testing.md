@@ -70,6 +70,9 @@ Successfull launch in Heroku                        |
       - Test if default image works
       - Test if password requirements work
 - Images below are only a sample of all the testing done
+- Testing responsiveness with [AmIResponsive](https://ui.dev/amiresponsive?url=https://cozycorner-pp5.herokuapp.com/)
+- When trying to test for PEP8 conformity, the webpage http://pep8online.com/ is no longer active.
+    - However the code conforms to the way taught in lesson material from Code Institute
 #
 Admin view testing                                            |
 :------------------------------------------------------------:| 
