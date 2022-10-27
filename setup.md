@@ -49,7 +49,6 @@
     - [User Goal](/README.md#user-goals)
 #
 ## Set up repository
-#
 - For the startup of this project the Django REST framework walkthrough was followed.
 - Repository was set up in GitHub using the [Code Institute- gitpod-full-template](https://github.com/Code-Institute-Org/gitpod-full-template)
 - The chosen name for the project was Project-Porfolio-5-DRF, to have a consistent naming of all projects.
@@ -57,7 +56,6 @@
 - GitPod was allowed to build as the primary window to minimize the risk of anyhting getting lost in the build.
 #
 ## Set up project in GitPod
-#
 - The following installments where made:
     - Install django by command: [pip3 install 'django<4'](https://www.djangoproject.com/)
     - Install project by: django-admin startproject p5_api
@@ -85,7 +83,6 @@
    - [pip3 install 'dj-rest-auth[with_social]'](https://dj-rest-auth.readthedocs.io/en/latest/installation.html#registration-optional)
 #
 ## Set up unique model in Gitpod
-#
 - Install Channels with Daphne ASGI
    - Consulted both docs and mentor to make sure I dont have any third party apps that will clash with Chanelles or Daphne, since this app will take over the terminal.
    - python3 -m pip3 install -U channels["daphne"]

@@ -6,7 +6,7 @@
 * [Deployed Back-End page](https://portfolio-project-5-drf-api.herokuapp.com/)
 #
 ## Navigation
-#
+Please note that this documentation has multiple pages
 * [Bugs](/bugs.md)
     - [Bugs in development](/bugs.md#bugs-in-development)
     - [Bugs left unsolved](/bugs.md#bugs-left-unsolved)
@@ -63,7 +63,6 @@
 - Create an Interactive Front-End application that consumes API data.
 #
 ## Technologies and Libraries
-
 ### Languages used
 - [Django Rest Framework](https://www.django-rest-framework.org/) 
 
@@ -109,7 +108,6 @@
 
 #
 ## Planning
-#
 ### Initial plan
 #
 Initially this project was planned as a planner tool, but after consulting  my mentor, it was switched to follow the walkthrough from the lessons on Rest-framework and React. The wireframe for that initial plan can be found if you follow this link: https://mikakallberg.github.io/wireframe-planner/
@@ -141,7 +139,6 @@ Initially this project was planned as a planner tool, but after consulting  my m
 - As a Site User I can Edit and Delete Messages I sent to other Users
 
 ## Credits
-#
 ## Thank you
 - [Spencer Barriball](https://github.com/5pence) for always being there and being a fantastic mentor.
 - Tutors at Code Institute

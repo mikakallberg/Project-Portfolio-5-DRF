@@ -49,7 +49,6 @@
     - [User Goal](/README.md#user-goals)
 #
 ## Existing Features
-#
 ### Profile
 - Anonymous User can register and create a profile
 - Users can log in to their profile

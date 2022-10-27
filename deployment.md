@@ -49,7 +49,6 @@
     - [User Goal](/README.md#user-goals)
 #
 ## Initial Deployment
-#
 - After initial workspace setup in Gitpod and ensured launch in preview.
    - Followed the last walkthrough for clean up and deployment to Heroku.
     - Installed databases(Please view setup for more information):
@@ -85,7 +84,6 @@ Successfull launch in Heroku                        |
   ![Herokku launch](/assets/images_readme/heroku_success_test.jpeg)
 #
 ## Final Deployment
-#
 - Following the walkthrough on deployment.
     - Redownloading all the applications.
     - Download:

@@ -49,7 +49,6 @@
     - [User Goal](/README.md#user-goals)
 #
 ## Bugs in development
-#
 - At first the workspace couldn't create the profile app error-message "can't open file 'manage.py': [Errno 2] No such file or directory".
    - File existed
    - File was located inside a p5_api folder, when the project folder ws created it created double folders, put the manage.py-file inside the first folder next to
@@ -85,7 +84,6 @@
    - Added items and bug resolved.
 #
 ## Bugs left unsolved
-#
 - In settings.py the following bugs is left unsolved:
    - 're' imported but unused
       - It is not being unused [Python docs on re](https://docs.python.org/3/library/re.html).

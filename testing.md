@@ -49,7 +49,6 @@
     - [User Goal](/README.md#user-goals)
 #
 ## First setup
-#
 - Testing done to ensure successful initial launch in preview and functionality of profiles app.
 - Test also successfull in Heroku.
 #
@@ -63,7 +62,6 @@ Successfull launch in Heroku                        |
 
 #
 ## Testing in development
-#
 - After creation of a superuser.
    -Test to see that /admin worked and that admin view is running correctly
    - created 4 other profiles
