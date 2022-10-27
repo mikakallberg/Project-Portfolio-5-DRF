@@ -65,13 +65,13 @@
 ## Technologies and Libraries
 
 ### Languages used
-- [Django](https://www.djangoproject.com/) 
+- [Django Rest Framework](https://www.django-rest-framework.org/) 
 
 - [HTML](https://www.w3schools.com/html/html_intro.asp)
 
 - [CSS](https://www.w3schools.com/css/css_intro.asp)
 
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript)
+- [React JS](https://reactjs.org/)
 
 ### Databases and server gateways
 - [Postgresql](https://www.postgresql.org/)
@@ -81,13 +81,25 @@
   The setting is left as part of future features, to have automatic testing instead of manual testing
 - [Daphne ASGI](https://docs.djangoproject.com/en/4.1/howto/deployment/asgi/daphne/)
 
-### Frameworks and tools
+### Frameworks, tools and libraries
+#### Back-End
 - [Django Rest Framework](https://www.django-rest-framework.org/)
 - [Channels-redis](https://channels.readthedocs.io/en/latest/index.html) 
    - Websocket tool
 - [Pillow](https://pillow.readthedocs.io/en/stable/reference/Image.html)
+   - To assist upload images to cloudinary
 - [Psycopg2](https://pypi.org/project/psycopg2/)
+   - PostgreSQL database adapter for python
 - [JSON Web Tokens](https://jwt.io/)
+   - Http-safety, web-tokens for kepping user logged in, authentication etc.
+#### Front-End
+- [React JS](https://reactjs.org/)
+- [JSON Web Tokens](https://jwt.io/)
+    - Web-tokens for kepping user logged in, authentication etc.
+- [React Bootstrap](https://react-bootstrap-v4.netlify.app/)
+   - Specilaize Bootstrap framework with React components
+- [React Router](https://v5.reactrouter.com/web/guides/quick-start)
+   - Assist in switches, routes and links for React apps.
 
 
 ### Cloud storage and deployment services
