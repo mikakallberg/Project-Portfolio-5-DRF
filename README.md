@@ -146,6 +146,7 @@ Initially this project was planned as a planner tool, but after consulting  my m
 
 
 ### Content credits
+- The biggest credit has to go Code Institute, I followed the Walkthroughs given, and developed a little on top of it.
 - For unique models a walkthru video from the account [Code With Stein](https://www.youtube.com/watch?v=SF1k_Twr9cg) was used. However current project is not exactly the same, the biggest difference is the walkthru is a one to many relationship, while the chat function in this project is mainly a one to one relationship. Howevere there is a possibility to expand the app named contacts to include a one to many chat.
 
 ### Media
